@@ -2,6 +2,9 @@ import fitz
 import google.generativeai as genai
 import json
 from skills_db import skills_db
+import os
+
+genai.configure(api_key=os.environ.get("GOOGLE_API_KEY"))
 
 def extract_skills(text):
     text_lower = text.lower()
@@ -21,7 +24,6 @@ def simple_extract_fields(text):
         "name": lines[0] if lines else "Unknown",
         "skills": extract_skills(text)
     }
-genai.configure(api_key="YOUR_API_KEY")  # or use env variable
 
 
 def extract_text_from_pdf(file_bytes):

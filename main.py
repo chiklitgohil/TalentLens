@@ -1,3 +1,6 @@
+from dotenv import load_dotenv
+load_dotenv()
+
 from fastapi import FastAPI, UploadFile, File
 from parser import extract_text_from_pdf, simple_extract_fields
 from normalizer import normalize_skills
