@@ -11,4 +11,8 @@ def compute_match_score(candidate_skills, job_description):
 
     score = util.cos_sim(emb1, emb2).item()
 
-    return round(score, 3)
+    # 🔥 Boost if direct overlap exists
+    overlap = sum(1 for skill in candidate_skills if skill in job_description.lower())
+    score += 0.05 * overlap
+
+    return round(min(score, 1.0), 3)

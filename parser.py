@@ -1,7 +1,26 @@
 import fitz
 import google.generativeai as genai
 import json
+from skills_db import skills_db
 
+def extract_skills(text):
+    text_lower = text.lower()
+    found_skills = []
+
+    for skill in skills_db:
+        if skill in text_lower:
+            found_skills.append(skill)
+
+    return list(set(found_skills))
+
+
+def simple_extract_fields(text):
+    lines = text.split("\n")
+
+    return {
+        "name": lines[0] if lines else "Unknown",
+        "skills": extract_skills(text)
+    }
 genai.configure(api_key="YOUR_API_KEY")  # or use env variable
 
 
