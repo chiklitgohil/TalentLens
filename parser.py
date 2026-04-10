@@ -1,4 +1,9 @@
-import fitz  # PyMuPDF
+import fitz
+import google.generativeai as genai
+import json
+
+genai.configure(api_key="YOUR_API_KEY")  # or use env variable
+
 
 def extract_text_from_pdf(file_bytes):
     text = ""
@@ -8,20 +13,39 @@ def extract_text_from_pdf(file_bytes):
     return text
 
 
-def simple_extract_fields(text):
-    # VERY basic (we'll upgrade later)
-    lines = text.split("\n")
+def llm_extract_fields(text):
+    model = genai.GenerativeModel("gemini-1.5-flash")
 
-    skills = []
-    for line in lines:
-        if "python" in line.lower():
-            skills.append("Python")
-        if "react" in line.lower():
-            skills.append("React")
-        if "machine learning" in line.lower():
-            skills.append("Machine Learning")
+    prompt = f"""
+Extract structured information from this resume.
 
-    return {
-        "name": lines[0] if lines else "Unknown",
-        "skills": list(set(skills))
-    }
+Return STRICT JSON only (no explanation):
+{{
+  "name": "",
+  "skills": [],
+  "experience": [
+    {{"role": "", "years": 0}}
+  ]
+}}
+
+Resume:
+{text}
+"""
+
+    response = model.generate_content(prompt)
+
+    content = response.text.strip()
+
+    # 🔥 Clean JSON (important)
+    try:
+        # Remove ```json if present
+        if content.startswith("```"):
+            content = content.split("```")[1]
+
+        return json.loads(content)
+    except:
+        return {
+            "name": "Unknown",
+            "skills": [],
+            "experience": []
+        }

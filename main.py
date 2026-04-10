@@ -2,7 +2,7 @@ from fastapi import FastAPI, UploadFile, File
 from parser import extract_text_from_pdf, simple_extract_fields
 from normalizer import normalize_skills
 from matcher import compute_match_score
-
+from parser import llm_extract_fields
 app = FastAPI()
 
 
@@ -13,7 +13,9 @@ async def match_resume(file: UploadFile = File(...), job_description: str = ""):
 
     # Parse resume
     text = extract_text_from_pdf(file_bytes)
-    parsed = simple_extract_fields(text)
+   
+
+    parsed = llm_extract_fields(text)
 
     # Normalize skills
     normalized_skills = normalize_skills(parsed["skills"])
