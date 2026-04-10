@@ -1,5 +1,6 @@
 import fitz
-import google.generativeai as genai
+from dotenv import load_dotenv
+from google import genai
 import json
 from skills_db import skills_db
 import os
