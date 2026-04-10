@@ -2,10 +2,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from fastapi import FastAPI, UploadFile, File
-from ai_pipeline.parser import extract_text_from_pdf, extract_text_from_docx, simple_extract_fields
+from ai_pipeline.parser import extract_text_from_pdf, extract_text_from_docx, llm_extract_fields
 from ai_pipeline.normalizer import normalize_skills
 from ai_pipeline.matcher import compute_match_score
-from ai_pipeline.parser import llm_extract_fields
 app = FastAPI()
 
 
