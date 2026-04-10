@@ -18,7 +18,7 @@ def llm_extract_fields(resume_text: str):
     user_prompt = PARSER_USER_TEMPLATE.format(resume_text=resume_text)
 
     response = client.models.generate_content(
-        model="gemini-1.5-flash", 
+        model="gemini-3.1-flash-lite-preview", 
         contents=user_prompt,
         config=types.GenerateContentConfig(
             system_instruction=PARSER_SYSTEM_PROMPT,
