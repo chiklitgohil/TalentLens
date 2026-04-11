@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume Matcher — TalentLens</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="wrapper">
+
+  <header>
+    <div class="logo">
+      <div class="logo-mark">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M4 10h12M10 4l6 6-6 6" stroke="#0d0d0f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="logo-text">talent<span>lens</span></div>
+    </div>
+    <div class="header-meta">
+      <strong>Resume Intelligence Pipeline</strong>
+      v1.0 &middot; Multi-agent system
+    </div>
+  </header>
+
+  <!-- Inputs -->
+  <div class="input-grid">
+
+    <div class="panel">
+      <div class="section-label">01 — Resumes</div>
+      <div class="drop-zone" id="dropZone" onclick="document.getElementById('fileInput').click()">
+        <div class="drop-icon">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <path d="M9 2.5v9M6 5.5L9 2.5l3 3" stroke="#c8f060" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="3" y="13" width="12" height="2.5" rx="1" fill="rgba(200,240,96,0.2)" stroke="#c8f060" stroke-width="0.75"/>
+          </svg>
+        </div>
+        <p class="drop-primary">Drop PDF or DOCX files</p>
+        <p class="drop-secondary">or click to browse</p>
+      </div>
+      <input type="file" id="fileInput" multiple accept=".pdf,.docx,.txt" />
+      <div class="file-list" id="fileList"></div>
+    </div>
+
+    <div class="panel">
+      <div class="section-label">02 — Job description</div>
+      <textarea id="jdInput" placeholder="Paste the job description here…&#10;&#10;Example: We are looking for a Senior Backend Engineer with 4+ years of Python, strong knowledge of FastAPI or Django, PostgreSQL, Redis, Docker, and Kubernetes experience."></textarea>
+    </div>
+
+  </div>
+
+  <!-- Actions -->
+  <div class="action-row">
+    <div class="loading-row" id="loadingRow">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <span class="loading-text" id="loadingText">Parsing resumes…</span>
+    </div>
+    <button class="btn btn-ghost" onclick="resetAll()">Clear</button>
+    <button class="btn btn-accent" id="analyzeBtn" onclick="runAnalysis()">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+        <circle cx="7" cy="7" r="6" stroke="#0d0d0f" stroke-width="1.5"/>
+        <path d="M7 4v3.5L9.5 9" stroke="#0d0d0f" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      Run analysis
+    </button>
+  </div>
+
+  <!-- Results -->
+  <div class="results" id="results">
+
+    <div class="score-grid">
+      <div class="score-card c-green">
+        <div class="score-label">Overall match</div>
+        <div class="score-value green" id="scoreOverall">—</div>
+      </div>
+      <div class="score-card c-blue">
+        <div class="score-label">Skills matched</div>
+        <div class="score-value blue" id="scoreMatched">—</div>
+      </div>
+      <div class="score-card c-red">
+        <div class="score-label">Skills missing</div>
+        <div class="score-value red" id="scoreMissing">—</div>
+      </div>
+      <div class="score-card c-amber">
+        <div class="score-label">Bonus skills</div>
+        <div class="score-value amber" id="scoreBonus">—</div>
+      </div>
+    </div>
+
+    <div class="divider">Skill analysis</div>
+
+    <div class="two-col">
+      <div class="result-panel">
+        <div class="chip-group">
+          <div class="chip-group-label">Matched</div>
+          <div class="chips" id="chipsMatched"></div>
+        </div>
+        <div class="chip-group">
+          <div class="chip-group-label">Missing from resume</div>
+          <div class="chips" id="chipsMissing"></div>
+        </div>
+        <div class="chip-group">
+          <div class="chip-group-label">Extra / bonus skills</div>
+          <div class="chips" id="chipsBonus"></div>
+        </div>
+      </div>
+
+      <div class="result-panel">
+        <div class="chip-group-label" style="margin-bottom:14px;">Semantic match by category</div>
+        <div id="categoryBars"></div>
+      </div>
+    </div>
+
+    <div class="full-panel">
+      <div class="chip-group-label" style="margin-bottom:10px;">Normalized skills from resume</div>
+      <div class="chips" id="chipsNormalized"></div>
+    </div>
+
+    <div class="api-hint">
+      <div class="api-dot"></div>
+      <div class="api-hint-text">
+        Connect to your FastAPI backend: replace the mock in <code>runAnalysis()</code> with
+        <code>fetch('/api/v1/match', { method: 'POST', body: formData })</code>.
+        The UI accepts <code>{ matched, missing, bonus, score, categories, normalized_skills }</code>.
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
