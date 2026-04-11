@@ -4,7 +4,12 @@ import fitz  # PyMuPDF
 import docx
 import io
 import sys
-sys.path.append("../ai_pipeline")
+import os
+
+# Safely resolve the absolute path to ai_pipeline and prioritize it in the module search path
+ai_pipeline_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "ai_pipeline"))
+sys.path.insert(0, ai_pipeline_dir)
+
 from pipeline import run_pipeline
 from parser import extract_text_from_pdf, extract_text_from_docx
 
