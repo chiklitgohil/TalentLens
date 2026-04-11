@@ -44,12 +44,12 @@ def compute_match(parsed: dict, job_description: str) -> dict:
         req_lower = req.lower()
         found = False
         for skill in candidate_skills:
-            if skill.lower() in req_lower or req_lower in skill.lower():
+            if skill.lower() == req_lower:
                 found = True
                 if skill not in matched_skills:
                     matched_skills.append(skill)
                     
-        if not found and len(req) > 1:
+        if not found and req.strip():
             gaps.append({
                 "skill": req,
                 "importance": "required"
@@ -59,12 +59,12 @@ def compute_match(parsed: dict, job_description: str) -> dict:
         pref_lower = pref.lower()
         found = False
         for skill in candidate_skills:
-            if skill.lower() in pref_lower or pref_lower in skill.lower():
+            if skill.lower() == pref_lower:
                 found = True
                 if skill not in matched_skills:
                     matched_skills.append(skill)
                     
-        if not found and len(pref) > 1:
+        if not found and pref.strip():
             gaps.append({
                 "skill": pref,
                 "importance": "preferred"
