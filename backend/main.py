@@ -9,7 +9,8 @@ ai_pipeline_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", 
 sys.path.insert(0, ai_pipeline_dir)
 
 from pipeline import run_pipeline
-from parser import extract_text_from_pdf, extract_text_from_docx
+from parser import extract_text_from_pdf, extract_text_from_docx, extract_text_from_txt
+from normalizer import NormalizationAgent
 
 app = FastAPI()
 
@@ -21,6 +22,12 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+normalizer = NormalizationAgent()
+
+@app.get("/api/v1/skills/taxonomy")
+async def get_taxonomy():
+    return {"taxonomy": normalizer.taxonomy}
 
 @app.post("/analyze")
 async def analyze(
@@ -37,8 +44,10 @@ async def analyze(
             resume_text = extract_text_from_pdf(file_bytes)
         elif filename.endswith(".docx"):
             resume_text = extract_text_from_docx(file_bytes)
+        elif filename.endswith(".txt"):
+            resume_text = extract_text_from_txt(file_bytes)
         else:
-            return {"error": "Only PDF and DOCX supported"}
+            return {"error": "Only PDF, DOCX, and TXT supported"}
 
         result = run_pipeline(resume_text, job_description)
         return result
