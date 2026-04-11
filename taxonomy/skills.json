@@ -1,0 +1,97 @@
+{
+  "Python": {"category": "Programming Languages", "parent": "Technical Skills", "synonyms": ["py"]},
+  "Java": {"category": "Programming Languages", "parent": "Technical Skills", "synonyms": []},
+  "C++": {"category": "Programming Languages", "parent": "Technical Skills", "synonyms": ["cpp"]},
+  "C": {"category": "Programming Languages", "parent": "Technical Skills", "synonyms": []},
+  "JavaScript": {"category": "Programming Languages", "parent": "Technical Skills", "synonyms": ["js"]},
+  "TypeScript": {"category": "Programming Languages", "parent": "Technical Skills", "synonyms": ["ts"]},
+  "Go": {"category": "Programming Languages", "parent": "Technical Skills", "synonyms": ["golang"]},
+  "Rust": {"category": "Programming Languages", "parent": "Technical Skills", "synonyms": []},
+  "Kotlin": {"category": "Programming Languages", "parent": "Technical Skills", "synonyms": []},
+  "Swift": {"category": "Programming Languages", "parent": "Technical Skills", "synonyms": []},
+  "PHP": {"category": "Programming Languages", "parent": "Technical Skills", "synonyms": []},
+  "Ruby": {"category": "Programming Languages", "parent": "Technical Skills", "synonyms": []},
+  "Dart": {"category": "Programming Languages", "parent": "Technical Skills", "synonyms": []},
+  "R": {"category": "Programming Languages", "parent": "Technical Skills", "synonyms": []},
+  "MATLAB": {"category": "Programming Languages", "parent": "Technical Skills", "synonyms": []},
+
+  "HTML": {"category": "Frontend", "parent": "Web Development", "synonyms": []},
+  "CSS": {"category": "Frontend", "parent": "Web Development", "synonyms": []},
+  "React": {"category": "Frontend", "parent": "Web Development", "synonyms": ["reactjs"]},
+  "Angular": {"category": "Frontend", "parent": "Web Development", "synonyms": []},
+  "Vue.js": {"category": "Frontend", "parent": "Web Development", "synonyms": ["vue"]},
+  "Next.js": {"category": "Frontend", "parent": "Web Development", "synonyms": []},
+  "Tailwind CSS": {"category": "Frontend", "parent": "Web Development", "synonyms": ["tailwind"]},
+  "Bootstrap": {"category": "Frontend", "parent": "Web Development", "synonyms": []},
+
+  "Node.js": {"category": "Backend", "parent": "Web Development", "synonyms": ["node"]},
+  "Express.js": {"category": "Backend", "parent": "Web Development", "synonyms": ["express"]},
+  "Django": {"category": "Backend", "parent": "Web Development", "synonyms": []},
+  "Flask": {"category": "Backend", "parent": "Web Development", "synonyms": []},
+  "FastAPI": {"category": "Backend", "parent": "Web Development", "synonyms": []},
+  "Spring Boot": {"category": "Backend", "parent": "Web Development", "synonyms": []},
+  "ASP.NET": {"category": "Backend", "parent": "Web Development", "synonyms": []},
+
+  "MySQL": {"category": "Database", "parent": "Data", "synonyms": []},
+  "PostgreSQL": {"category": "Database", "parent": "Data", "synonyms": ["postgres"]},
+  "MongoDB": {"category": "Database", "parent": "Data", "synonyms": ["mongo"]},
+  "Redis": {"category": "Database", "parent": "Data", "synonyms": []},
+  "SQLite": {"category": "Database", "parent": "Data", "synonyms": []},
+  "Oracle": {"category": "Database", "parent": "Data", "synonyms": []},
+
+  "Docker": {"category": "DevOps", "parent": "Cloud", "synonyms": []},
+  "Kubernetes": {"category": "DevOps", "parent": "Cloud", "synonyms": ["k8s"]},
+  "Jenkins": {"category": "DevOps", "parent": "Cloud", "synonyms": []},
+  "Git": {"category": "DevOps", "parent": "Cloud", "synonyms": []},
+  "GitHub": {"category": "DevOps", "parent": "Cloud", "synonyms": []},
+  "GitLab": {"category": "DevOps", "parent": "Cloud", "synonyms": []},
+  "CI/CD": {"category": "DevOps", "parent": "Cloud", "synonyms": []},
+
+  "AWS": {"category": "Cloud", "parent": "Infrastructure", "synonyms": ["amazon web services"]},
+  "Azure": {"category": "Cloud", "parent": "Infrastructure", "synonyms": []},
+  "Google Cloud": {"category": "Cloud", "parent": "Infrastructure", "synonyms": ["gcp"]},
+
+  "TensorFlow": {"category": "Deep Learning", "parent": "Machine Learning", "synonyms": []},
+  "PyTorch": {"category": "Deep Learning", "parent": "Machine Learning", "synonyms": []},
+  "Keras": {"category": "Deep Learning", "parent": "Machine Learning", "synonyms": []},
+  "Scikit-learn": {"category": "Machine Learning", "parent": "AI", "synonyms": ["sklearn"]},
+  "XGBoost": {"category": "Machine Learning", "parent": "AI", "synonyms": []},
+  "LightGBM": {"category": "Machine Learning", "parent": "AI", "synonyms": []},
+
+  "NLP": {"category": "AI", "parent": "Machine Learning", "synonyms": ["natural language processing"]},
+  "Computer Vision": {"category": "AI", "parent": "Machine Learning", "synonyms": ["cv"]},
+  "Deep Learning": {"category": "AI", "parent": "Machine Learning", "synonyms": []},
+
+  "Pandas": {"category": "Data Science", "parent": "Data", "synonyms": []},
+  "NumPy": {"category": "Data Science", "parent": "Data", "synonyms": []},
+  "Matplotlib": {"category": "Data Science", "parent": "Data", "synonyms": []},
+  "Seaborn": {"category": "Data Science", "parent": "Data", "synonyms": []},
+  "Power BI": {"category": "Data Visualization", "parent": "Data", "synonyms": []},
+  "Tableau": {"category": "Data Visualization", "parent": "Data", "synonyms": []},
+  "Excel": {"category": "Data", "parent": "Business", "synonyms": []},
+
+  "Linux": {"category": "Operating Systems", "parent": "Infrastructure", "synonyms": []},
+  "Unix": {"category": "Operating Systems", "parent": "Infrastructure", "synonyms": []},
+
+  "REST API": {"category": "Backend", "parent": "Web Development", "synonyms": ["rest"]},
+  "GraphQL": {"category": "Backend", "parent": "Web Development", "synonyms": []},
+
+  "Microservices": {"category": "Architecture", "parent": "Backend", "synonyms": []},
+  "System Design": {"category": "Architecture", "parent": "Backend", "synonyms": []},
+
+  "Android": {"category": "Mobile Development", "parent": "Software Development", "synonyms": []},
+  "iOS": {"category": "Mobile Development", "parent": "Software Development", "synonyms": []},
+  "Flutter": {"category": "Mobile Development", "parent": "Software Development", "synonyms": []},
+  "React Native": {"category": "Mobile Development", "parent": "Software Development", "synonyms": []},
+
+  "Cybersecurity": {"category": "Security", "parent": "Infrastructure", "synonyms": []},
+  "Ethical Hacking": {"category": "Security", "parent": "Infrastructure", "synonyms": []},
+
+  "Agile": {"category": "Methodology", "parent": "Management", "synonyms": []},
+  "Scrum": {"category": "Methodology", "parent": "Management", "synonyms": []},
+
+  "Communication": {"category": "Soft Skills", "parent": "General", "synonyms": []},
+  "Leadership": {"category": "Soft Skills", "parent": "General", "synonyms": []},
+  "Problem Solving": {"category": "Soft Skills", "parent": "General", "synonyms": []},
+  "Teamwork": {"category": "Soft Skills", "parent": "General", "synonyms": []}
+}
