@@ -1,5 +1,6 @@
 from fastapi import FastAPI, UploadFile, File, Form
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 import fitz  # PyMuPDF
 import docx
 import io
@@ -38,3 +39,8 @@ async def analyze(
     
     result = run_pipeline(resume_text, job_description)
     return result
+
+# Mount the frontend directory to serve the UI at the root (http://localhost:8000/)
+frontend_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "frontend"))
+if os.path.exists(frontend_dir):
+    app.mount("/", StaticFiles(directory=frontend_dir, html=True), name="frontend")
