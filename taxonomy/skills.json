@@ -1,0 +1,28 @@
+{
+  "Programming Languages": {
+    "Python": ["python", "py"],
+    "JavaScript": ["javascript", "js", "java script"],
+    "Java": ["java"],
+    "C++": ["cpp", "c plus plus"]
+  },
+  "ML Frameworks": {
+    "PyTorch": ["pytorch", "torch"],
+    "TensorFlow": ["tensorflow", "tf"],
+    "Scikit-learn": ["sklearn", "scikit learn", "scikit-learn"]
+  },
+  "DevOps": {
+    "Kubernetes": ["kubernetes", "k8s"],
+    "Docker": ["docker"],
+    "Git": ["git", "github", "gitlab"]
+  },
+  "Databases": {
+    "PostgreSQL": ["postgresql", "postgres"],
+    "MongoDB": ["mongodb", "mongo"],
+    "MySQL": ["mysql"]
+  },
+  "Cloud": {
+    "AWS": ["aws", "amazon web services"],
+    "GCP": ["gcp", "google cloud"],
+    "Azure": ["azure", "microsoft azure"]
+  }
+}

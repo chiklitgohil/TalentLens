@@ -1,7 +1,7 @@
 from dotenv import load_dotenv
 from google import genai
 from google.genai import types
-from prompts.parser_prompt import PARSER_SYSTEM_PROMPT, PARSER_USER_TEMPLATE
+from prompts.v1 import PARSER_SYSTEM_PROMPT, PARSER_USER_TEMPLATE
 import json
 import fitz #PyMu
 import docx
