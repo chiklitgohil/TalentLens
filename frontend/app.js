@@ -106,6 +106,9 @@ async function runAnalysis() {
 
     const data = await res.json();
 
+    // Log the complete response to the browser's developer console
+    console.log("Pipeline Output (Inspect job_requirements here):", data);
+
     // Map backend response to UI structure
     const score = data.match_score || 0;
     const missing = (data.gaps || []).map((g) => g.skill);
@@ -114,10 +117,7 @@ async function runAnalysis() {
     );
 
     // Calculate matched and bonus items
-    const matched = normalized_skills.slice(
-      0,
-      Math.max(1, Math.floor(normalized_skills.length * (score / 100))),
-    );
+    const matched = data.matched_skills || [];
     const bonus = normalized_skills
       .filter((s) => !matched.includes(s))
       .slice(0, 5);

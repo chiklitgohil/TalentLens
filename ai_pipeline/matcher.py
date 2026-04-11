@@ -20,6 +20,11 @@ def extract_jd_requirements(job_description: str) -> dict:
     required = [s["skill"] for s in req_norm["normalized_skills"]] + req_norm["emerging_skills"]
     preferred = [s["skill"] for s in pref_norm["normalized_skills"]] + pref_norm["emerging_skills"]
     
+    # Print to the backend terminal for debugging
+    print(f"\n--- DEBUG: JD EXTRACTION ---")
+    print(f"Raw LLM Extraction: {raw_reqs}")
+    print(f"Normalized for Matcher: {{'required': {required}, 'preferred': {preferred}}}\n")
+
     return {"required": required, "preferred": preferred}
 
 def compute_match(parsed: dict, job_description: str) -> dict:
@@ -28,27 +33,22 @@ def compute_match(parsed: dict, job_description: str) -> dict:
         s["canonical"] for s in parsed["candidate"]["normalised_skills"]
         if s["canonical"] != "Unknown"
     ]
-    candidate_text = " ".join(candidate_skills) if candidate_skills else "unknown"
-    
-    # Embed both
-    candidate_embedding = model.encode(candidate_text)
-    jd_embedding = model.encode(job_description)
-    
-    # Cosine similarity
-    similarity = np.dot(candidate_embedding, jd_embedding) / (
-        np.linalg.norm(candidate_embedding) * np.linalg.norm(jd_embedding)
-    )
-    match_score = round(float(similarity) * 100, 1)
     
     # Gap analysis
     jd_requirements = extract_jd_requirements(job_description)
-    candidate_skill_names = [s.lower() for s in candidate_skills]
     
     gaps = []
+    matched_skills = []
+    
     for req in jd_requirements.get("required", []):
         req_lower = req.lower()
-        found = any(skill in req_lower or req_lower in skill 
-                   for skill in candidate_skill_names)
+        found = False
+        for skill in candidate_skills:
+            if skill.lower() in req_lower or req_lower in skill.lower():
+                found = True
+                if skill not in matched_skills:
+                    matched_skills.append(skill)
+                    
         if not found and len(req) > 1:
             gaps.append({
                 "skill": req,
@@ -57,16 +57,44 @@ def compute_match(parsed: dict, job_description: str) -> dict:
     
     for pref in jd_requirements.get("preferred", []):
         pref_lower = pref.lower()
-        found = any(skill in pref_lower or pref_lower in skill 
-                   for skill in candidate_skill_names)
+        found = False
+        for skill in candidate_skills:
+            if skill.lower() in pref_lower or pref_lower in skill.lower():
+                found = True
+                if skill not in matched_skills:
+                    matched_skills.append(skill)
+                    
         if not found and len(pref) > 1:
             gaps.append({
                 "skill": pref,
                 "importance": "preferred"
             })
+            
+    # Semantic Embedding Similarity
+    candidate_text = " ".join(candidate_skills) if candidate_skills else "unknown"
+    candidate_embedding = model.encode(candidate_text)
+    jd_embedding = model.encode(job_description)
+    
+    similarity = np.dot(candidate_embedding, jd_embedding) / (
+        np.linalg.norm(candidate_embedding) * np.linalg.norm(jd_embedding)
+    )
+    semantic_score = float(similarity) * 100
+    
+    # Weighted Final Score (70% Explicit Skills, 30% Semantic Context)
+    total_jd_skills = len(jd_requirements.get("required", [])) + len(jd_requirements.get("preferred", []))
+    
+    if total_jd_skills > 0:
+        explicit_score = (len(matched_skills) / total_jd_skills) * 100
+        match_score = round((explicit_score * 0.7) + (semantic_score * 0.3), 1)
+    else:
+        match_score = round(semantic_score, 1)
+        
+    match_score = min(match_score, 100.0) # Cap at 100% just in case
     
     return {
         "candidate": parsed["candidate"],
+        "job_requirements": jd_requirements,  # Added to API response for debugging
         "match_score": match_score,
+        "matched_skills": matched_skills,
         "gaps": gaps[:10]  # Limit to top 10 gaps
     }
