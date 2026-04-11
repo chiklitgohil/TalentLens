@@ -15,7 +15,7 @@ load_dotenv()
 client = genai.Client()
 
 def llm_extract_fields(resume_text: str):
-    user_prompt = PARSER_USER_TEMPLATE.format(RESUME_TEXT=resume_text)
+    user_prompt = PARSER_USER_TEMPLATE.replace("{RESUME_TEXT}", resume_text)
 
     response = client.models.generate_content(
         model="gemini-3.1-flash-lite-preview", 
