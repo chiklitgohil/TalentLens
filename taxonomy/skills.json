@@ -1,2105 +1,1171 @@
 {
+  "_meta": {
+    "version": "2.0",
+    "description": "Bidirectional skill graph. 'implies' = skills strongly suggested if you know this skill. 'implied_by' = skills that strongly suggest you know this skill. 'related' = loosely related skills worth surfacing.",
+    "usage": "If a candidate lists skill X, union of X.implies + X.implied_by gives the full relevance cluster."
+  },
+
   "Python": {
-    "category": "Programming Languages",
-    "parent": "Technical Skills",
-    "synonyms": ["py"]
-  },
-  "Java": {
-    "category": "Programming Languages",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "C++": {
-    "category": "Programming Languages",
-    "parent": "Technical Skills",
-    "synonyms": ["cpp"]
-  },
-  "C": {
-    "category": "Programming Languages",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "C#": {
-    "category": "Programming Languages",
-    "parent": "Technical Skills",
-    "synonyms": ["csharp"]
+    "category": "Programming Languages", "parent": "Technical Skills",
+    "synonyms": ["py"],
+    "implies":    ["Pip", "Virtual Environments", "Jupyter Notebook"],
+    "implied_by": ["Django", "Flask", "FastAPI", "Scikit-learn", "TensorFlow", "PyTorch", "Pandas", "NumPy", "Celery", "Airflow", "Pytest", "Matplotlib", "Seaborn", "SciPy", "MLflow", "PySpark", "DVC", "LangChain", "LlamaIndex"],
+    "related":    ["R", "Julia", "MATLAB", "Machine Learning", "Data Science", "Scripting"]
   },
   "JavaScript": {
-    "category": "Programming Languages",
-    "parent": "Technical Skills",
-    "synonyms": ["js"]
+    "category": "Programming Languages", "parent": "Technical Skills",
+    "synonyms": ["js"],
+    "implies":    ["npm", "HTML", "CSS"],
+    "implied_by": ["React", "Vue.js", "Angular", "Next.js", "Node.js", "Express.js", "Jest", "Webpack", "Vite", "jQuery", "Redux", "Svelte"],
+    "related":    ["TypeScript", "Web Development", "Frontend", "Backend"]
   },
   "TypeScript": {
-    "category": "Programming Languages",
-    "parent": "Technical Skills",
-    "synonyms": ["ts"]
+    "category": "Programming Languages", "parent": "Technical Skills",
+    "synonyms": ["ts"],
+    "implies":    ["JavaScript", "npm"],
+    "implied_by": ["Next.js", "NestJS", "Angular"],
+    "related":    ["React", "Node.js", "Type Safety", "Frontend"]
+  },
+  "Java": {
+    "category": "Programming Languages", "parent": "Technical Skills",
+    "synonyms": [],
+    "implies":    ["OOP", "Maven", "Gradle"],
+    "implied_by": ["Spring Boot", "JUnit", "Hibernate", "Android", "Maven", "Gradle"],
+    "related":    ["Kotlin", "Scala", "C#", "Backend"]
+  },
+  "C++": {
+    "category": "Programming Languages", "parent": "Technical Skills",
+    "synonyms": ["cpp"],
+    "implies":    ["Data Structures", "Algorithms", "Memory Management"],
+    "implied_by": ["Competitive Programming", "Embedded Systems", "Game Development", "OpenGL", "Vulkan"],
+    "related":    ["C", "Rust", "Systems Programming", "Performance Engineering"]
+  },
+  "C": {
+    "category": "Programming Languages", "parent": "Technical Skills",
+    "synonyms": [],
+    "implies":    ["Memory Management", "Pointers", "Data Structures"],
+    "implied_by": ["Embedded Systems", "FPGA", "OS Development", "Arduino"],
+    "related":    ["C++", "Assembly", "Systems Programming"]
+  },
+  "C#": {
+    "category": "Programming Languages", "parent": "Technical Skills",
+    "synonyms": ["csharp"],
+    "implies":    ["OOP", ".NET", "Visual Studio"],
+    "implied_by": ["ASP.NET", "Unity", "Xamarin"],
+    "related":    ["Java", "F#", "Backend", "Game Development"]
   },
   "Go": {
-    "category": "Programming Languages",
-    "parent": "Technical Skills",
-    "synonyms": ["golang"]
+    "category": "Programming Languages", "parent": "Technical Skills",
+    "synonyms": ["golang"],
+    "implies":    ["Concurrency", "REST API"],
+    "implied_by": ["Gin", "Fiber", "Kubernetes"],
+    "related":    ["Rust", "Systems Programming", "Microservices", "Backend"]
   },
   "Rust": {
-    "category": "Programming Languages",
-    "parent": "Technical Skills",
-    "synonyms": []
+    "category": "Programming Languages", "parent": "Technical Skills",
+    "synonyms": [],
+    "implies":    ["Memory Safety", "Systems Programming", "Concurrency"],
+    "implied_by": ["WebAssembly"],
+    "related":    ["C++", "Go", "Systems Programming", "Embedded Systems"]
   },
   "Kotlin": {
-    "category": "Programming Languages",
-    "parent": "Technical Skills",
-    "synonyms": []
+    "category": "Programming Languages", "parent": "Technical Skills",
+    "synonyms": [],
+    "implies":    ["JVM", "OOP"],
+    "implied_by": ["Android"],
+    "related":    ["Java", "Scala", "Spring Boot", "Android"]
   },
   "Swift": {
-    "category": "Programming Languages",
-    "parent": "Technical Skills",
-    "synonyms": []
+    "category": "Programming Languages", "parent": "Technical Skills",
+    "synonyms": [],
+    "implies":    ["OOP", "Xcode"],
+    "implied_by": ["iOS"],
+    "related":    ["Objective-C", "iOS", "Xcode"]
   },
   "PHP": {
-    "category": "Programming Languages",
-    "parent": "Technical Skills",
-    "synonyms": []
+    "category": "Programming Languages", "parent": "Technical Skills",
+    "synonyms": [],
+    "implies":    ["HTML", "MySQL"],
+    "implied_by": ["Laravel", "WordPress"],
+    "related":    ["Web Development", "Backend", "MySQL"]
   },
   "Ruby": {
-    "category": "Programming Languages",
-    "parent": "Technical Skills",
-    "synonyms": []
+    "category": "Programming Languages", "parent": "Technical Skills",
+    "synonyms": [],
+    "implies":    ["OOP", "Scripting"],
+    "implied_by": ["Ruby on Rails"],
+    "related":    ["Python", "Scripting", "Web Development"]
   },
   "Dart": {
-    "category": "Programming Languages",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "R": {
-    "category": "Programming Languages",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "MATLAB": {
-    "category": "Programming Languages",
-    "parent": "Technical Skills",
-    "synonyms": []
+    "category": "Programming Languages", "parent": "Technical Skills",
+    "synonyms": [],
+    "implies":    ["OOP"],
+    "implied_by": ["Flutter"],
+    "related":    ["Flutter", "Mobile Development"]
   },
   "Scala": {
-    "category": "Programming Languages",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "Perl": {
-    "category": "Programming Languages",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "Haskell": {
-    "category": "Programming Languages",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "Elixir": {
-    "category": "Programming Languages",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "Clojure": {
-    "category": "Programming Languages",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "Lua": {
-    "category": "Programming Languages",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "Julia": {
-    "category": "Programming Languages",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "Groovy": {
-    "category": "Programming Languages",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "Assembly": {
-    "category": "Programming Languages",
-    "parent": "Technical Skills",
-    "synonyms": ["asm"]
-  },
-  "COBOL": {
-    "category": "Programming Languages",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "Fortran": {
-    "category": "Programming Languages",
-    "parent": "Technical Skills",
-    "synonyms": []
+    "category": "Programming Languages", "parent": "Technical Skills",
+    "synonyms": [],
+    "implies":    ["Functional Programming", "JVM"],
+    "implied_by": ["Apache Spark"],
+    "related":    ["Java", "Apache Spark", "Functional Programming"]
   },
   "Bash": {
-    "category": "Programming Languages",
-    "parent": "Technical Skills",
-    "synonyms": ["shell scripting", "sh"]
+    "category": "Programming Languages", "parent": "Technical Skills",
+    "synonyms": ["shell scripting", "sh"],
+    "implies":    ["Linux", "Terminal", "Scripting"],
+    "implied_by": ["DevOps", "Linux", "CI/CD"],
+    "related":    ["PowerShell", "Automation", "Linux"]
   },
   "PowerShell": {
-    "category": "Programming Languages",
-    "parent": "Technical Skills",
-    "synonyms": []
+    "category": "Programming Languages", "parent": "Technical Skills",
+    "synonyms": [],
+    "implies":    ["Windows", "Scripting", "Automation"],
+    "implied_by": ["Windows Server", "Azure"],
+    "related":    ["Bash", "Windows", "Azure"]
+  },
+  "R": {
+    "category": "Programming Languages", "parent": "Technical Skills",
+    "synonyms": [],
+    "implies":    ["Statistics", "Data Visualization"],
+    "implied_by": ["Statistical Modeling", "Bioinformatics"],
+    "related":    ["Python", "MATLAB", "Data Science", "Statistics"]
+  },
+  "MATLAB": {
+    "category": "Programming Languages", "parent": "Technical Skills",
+    "synonyms": [],
+    "implies":    ["Numerical Computing", "Simulation"],
+    "implied_by": [],
+    "related":    ["R", "Python", "Simulink", "Signal Processing"]
   },
   "Solidity": {
-    "category": "Programming Languages",
-    "parent": "Technical Skills",
-    "synonyms": []
+    "category": "Programming Languages", "parent": "Technical Skills",
+    "synonyms": [],
+    "implies":    ["Blockchain", "Ethereum", "Smart Contracts"],
+    "implied_by": [],
+    "related":    ["Blockchain", "Web3", "Ethereum", "Cryptography"]
   },
-  "Objective-C": {
-    "category": "Programming Languages",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-
-  "HTML": {
-    "category": "Frontend",
-    "parent": "Web Development",
-    "synonyms": []
-  },
-  "CSS": {
-    "category": "Frontend",
-    "parent": "Web Development",
-    "synonyms": []
-  },
-  "React": {
-    "category": "Frontend",
-    "parent": "Web Development",
-    "synonyms": ["reactjs"]
-  },
-  "Angular": {
-    "category": "Frontend",
-    "parent": "Web Development",
-    "synonyms": []
-  },
-  "Vue.js": {
-    "category": "Frontend",
-    "parent": "Web Development",
-    "synonyms": ["vue"]
-  },
-  "Next.js": {
-    "category": "Frontend",
-    "parent": "Web Development",
-    "synonyms": []
-  },
-  "Nuxt.js": {
-    "category": "Frontend",
-    "parent": "Web Development",
-    "synonyms": ["nuxt"]
-  },
-  "Svelte": {
-    "category": "Frontend",
-    "parent": "Web Development",
-    "synonyms": []
-  },
-  "SvelteKit": {
-    "category": "Frontend",
-    "parent": "Web Development",
-    "synonyms": []
-  },
-  "Tailwind CSS": {
-    "category": "Frontend",
-    "parent": "Web Development",
-    "synonyms": ["tailwind"]
-  },
-  "Bootstrap": {
-    "category": "Frontend",
-    "parent": "Web Development",
-    "synonyms": []
-  },
-  "Material UI": {
-    "category": "Frontend",
-    "parent": "Web Development",
-    "synonyms": ["mui"]
-  },
-  "Chakra UI": {
-    "category": "Frontend",
-    "parent": "Web Development",
-    "synonyms": []
-  },
-  "Shadcn UI": {
-    "category": "Frontend",
-    "parent": "Web Development",
-    "synonyms": ["shadcn"]
-  },
-  "jQuery": {
-    "category": "Frontend",
-    "parent": "Web Development",
-    "synonyms": []
-  },
-  "Redux": {
-    "category": "Frontend",
-    "parent": "Web Development",
-    "synonyms": []
-  },
-  "Zustand": {
-    "category": "Frontend",
-    "parent": "Web Development",
-    "synonyms": []
-  },
-  "Webpack": {
-    "category": "Frontend",
-    "parent": "Web Development",
-    "synonyms": []
-  },
-  "Vite": {
-    "category": "Frontend",
-    "parent": "Web Development",
-    "synonyms": []
-  },
-  "Babel": {
-    "category": "Frontend",
-    "parent": "Web Development",
-    "synonyms": []
-  },
-  "Sass": {
-    "category": "Frontend",
-    "parent": "Web Development",
-    "synonyms": ["scss"]
-  },
-  "Less": {
-    "category": "Frontend",
-    "parent": "Web Development",
-    "synonyms": []
-  },
-  "Storybook": {
-    "category": "Frontend",
-    "parent": "Web Development",
-    "synonyms": []
-  },
-  "Three.js": {
-    "category": "Frontend",
-    "parent": "Web Development",
-    "synonyms": []
-  },
-  "WebGL": {
-    "category": "Frontend",
-    "parent": "Web Development",
-    "synonyms": []
-  },
-  "PWA": {
-    "category": "Frontend",
-    "parent": "Web Development",
-    "synonyms": ["progressive web apps"]
-  },
-
-  "Node.js": {
-    "category": "Backend",
-    "parent": "Web Development",
-    "synonyms": ["node"]
-  },
-  "Express.js": {
-    "category": "Backend",
-    "parent": "Web Development",
-    "synonyms": ["express"]
-  },
-  "Django": {
-    "category": "Backend",
-    "parent": "Web Development",
-    "synonyms": []
-  },
-  "Flask": {
-    "category": "Backend",
-    "parent": "Web Development",
-    "synonyms": []
-  },
-  "FastAPI": {
-    "category": "Backend",
-    "parent": "Web Development",
-    "synonyms": []
-  },
-  "Spring Boot": {
-    "category": "Backend",
-    "parent": "Web Development",
-    "synonyms": []
-  },
-  "ASP.NET": {
-    "category": "Backend",
-    "parent": "Web Development",
-    "synonyms": []
-  },
-  "NestJS": {
-    "category": "Backend",
-    "parent": "Web Development",
-    "synonyms": []
-  },
-  "Laravel": {
-    "category": "Backend",
-    "parent": "Web Development",
-    "synonyms": []
-  },
-  "Ruby on Rails": {
-    "category": "Backend",
-    "parent": "Web Development",
-    "synonyms": ["rails", "ror"]
-  },
-  "Gin": {
-    "category": "Backend",
-    "parent": "Web Development",
-    "synonyms": []
-  },
-  "Fiber": {
-    "category": "Backend",
-    "parent": "Web Development",
-    "synonyms": []
-  },
-  "Hono": {
-    "category": "Backend",
-    "parent": "Web Development",
-    "synonyms": []
-  },
-  "REST API": {
-    "category": "Backend",
-    "parent": "Web Development",
-    "synonyms": ["rest"]
-  },
-  "GraphQL": {
-    "category": "Backend",
-    "parent": "Web Development",
-    "synonyms": []
-  },
-  "gRPC": {
-    "category": "Backend",
-    "parent": "Web Development",
-    "synonyms": []
-  },
-  "WebSockets": {
-    "category": "Backend",
-    "parent": "Web Development",
-    "synonyms": []
-  },
-  "OAuth": {
-    "category": "Backend",
-    "parent": "Web Development",
-    "synonyms": ["oauth2"]
-  },
-  "JWT": {
-    "category": "Backend",
-    "parent": "Web Development",
-    "synonyms": ["json web token"]
-  },
-  "Celery": {
-    "category": "Backend",
-    "parent": "Web Development",
-    "synonyms": []
-  },
-
   "SQL": {
-    "category": "Database",
-    "parent": "Data",
-    "synonyms": ["structured query language"]
+    "category": "Database", "parent": "Data",
+    "synonyms": ["structured query language"],
+    "implies":    ["Relational Databases", "Data Querying"],
+    "implied_by": ["MySQL", "PostgreSQL", "SQLite", "Microsoft SQL Server", "Oracle", "Snowflake", "BigQuery", "AWS RDS", "dbt"],
+    "related":    ["NoSQL", "Database Design", "Data Warehousing", "ETL"]
   },
   "MySQL": {
-    "category": "Database",
-    "parent": "Data",
-    "synonyms": []
+    "category": "Database", "parent": "Data",
+    "synonyms": [],
+    "implies":    ["SQL", "Relational Databases"],
+    "implied_by": ["PHP", "Laravel", "WordPress"],
+    "related":    ["PostgreSQL", "MariaDB", "SQLite"]
   },
   "PostgreSQL": {
-    "category": "Database",
-    "parent": "Data",
-    "synonyms": ["postgres"]
+    "category": "Database", "parent": "Data",
+    "synonyms": ["postgres"],
+    "implies":    ["SQL", "Relational Databases"],
+    "implied_by": ["Django", "FastAPI", "Supabase", "Prisma"],
+    "related":    ["MySQL", "SQL", "Database Design"]
   },
   "MongoDB": {
-    "category": "Database",
-    "parent": "Data",
-    "synonyms": ["mongo"]
+    "category": "Database", "parent": "Data",
+    "synonyms": ["mongo"],
+    "implies":    ["NoSQL", "JSON", "Document Store"],
+    "implied_by": ["Mongoose"],
+    "related":    ["Redis", "Cassandra", "Firebase", "Node.js"]
   },
   "Redis": {
-    "category": "Database",
-    "parent": "Data",
-    "synonyms": []
-  },
-  "SQLite": {
-    "category": "Database",
-    "parent": "Data",
-    "synonyms": []
-  },
-  "Oracle": {
-    "category": "Database",
-    "parent": "Data",
-    "synonyms": []
-  },
-  "Microsoft SQL Server": {
-    "category": "Database",
-    "parent": "Data",
-    "synonyms": ["mssql", "sql server"]
-  },
-  "Cassandra": {
-    "category": "Database",
-    "parent": "Data",
-    "synonyms": []
-  },
-  "DynamoDB": {
-    "category": "Database",
-    "parent": "Data",
-    "synonyms": []
-  },
-  "Firebase": {
-    "category": "Database",
-    "parent": "Data",
-    "synonyms": []
-  },
-  "Firestore": {
-    "category": "Database",
-    "parent": "Data",
-    "synonyms": []
+    "category": "Database", "parent": "Data",
+    "synonyms": [],
+    "implies":    ["Caching", "In-Memory Storage", "Key-Value Store"],
+    "implied_by": [],
+    "related":    ["Memcached", "MongoDB", "Microservices", "Performance Engineering"]
   },
   "Elasticsearch": {
-    "category": "Database",
-    "parent": "Data",
-    "synonyms": []
+    "category": "Database", "parent": "Data",
+    "synonyms": [],
+    "implies":    ["Full-Text Search", "NoSQL", "Log Analysis"],
+    "implied_by": ["Kibana", "Logstash", "ELK Stack"],
+    "related":    ["Kibana", "Logstash", "Search Engineering"]
   },
-  "Neo4j": {
-    "category": "Database",
-    "parent": "Data",
-    "synonyms": []
-  },
-  "CouchDB": {
-    "category": "Database",
-    "parent": "Data",
-    "synonyms": []
-  },
-  "InfluxDB": {
-    "category": "Database",
-    "parent": "Data",
-    "synonyms": []
+  "Firebase": {
+    "category": "Database", "parent": "Data",
+    "synonyms": [],
+    "implies":    ["NoSQL", "Real-Time Database", "Google Cloud"],
+    "implied_by": ["Firestore"],
+    "related":    ["Supabase", "Google Cloud", "Mobile Development"]
   },
   "Supabase": {
-    "category": "Database",
-    "parent": "Data",
-    "synonyms": []
-  },
-  "PlanetScale": {
-    "category": "Database",
-    "parent": "Data",
-    "synonyms": []
+    "category": "Database", "parent": "Data",
+    "synonyms": [],
+    "implies":    ["PostgreSQL", "REST API", "Authentication"],
+    "implied_by": [],
+    "related":    ["Firebase", "PostgreSQL", "Backend as a Service"]
   },
   "Prisma": {
-    "category": "Database",
-    "parent": "Data",
-    "synonyms": []
-  },
-  "SQLAlchemy": {
-    "category": "Database",
-    "parent": "Data",
-    "synonyms": []
-  },
-  "Hibernate": {
-    "category": "Database",
-    "parent": "Data",
-    "synonyms": []
-  },
-
-  "Git": {
-    "category": "Version Control",
-    "parent": "DevOps",
-    "synonyms": []
-  },
-  "GitHub": {
-    "category": "Version Control",
-    "parent": "DevOps",
-    "synonyms": []
-  },
-  "GitLab": {
-    "category": "Version Control",
-    "parent": "DevOps",
-    "synonyms": []
-  },
-  "Bitbucket": {
-    "category": "Version Control",
-    "parent": "DevOps",
-    "synonyms": []
-  },
-  "SVN": {
-    "category": "Version Control",
-    "parent": "DevOps",
-    "synonyms": ["subversion"]
-  },
-
-  "Docker": {
-    "category": "DevOps",
-    "parent": "Cloud",
-    "synonyms": []
-  },
-  "Kubernetes": {
-    "category": "DevOps",
-    "parent": "Cloud",
-    "synonyms": ["k8s"]
-  },
-  "Jenkins": {
-    "category": "DevOps",
-    "parent": "Cloud",
-    "synonyms": []
-  },
-  "CI/CD": {
-    "category": "DevOps",
-    "parent": "Cloud",
-    "synonyms": []
-  },
-  "GitHub Actions": {
-    "category": "DevOps",
-    "parent": "Cloud",
-    "synonyms": []
-  },
-  "GitLab CI": {
-    "category": "DevOps",
-    "parent": "Cloud",
-    "synonyms": []
-  },
-  "CircleCI": {
-    "category": "DevOps",
-    "parent": "Cloud",
-    "synonyms": []
-  },
-  "Travis CI": {
-    "category": "DevOps",
-    "parent": "Cloud",
-    "synonyms": []
-  },
-  "Ansible": {
-    "category": "DevOps",
-    "parent": "Cloud",
-    "synonyms": []
-  },
-  "Terraform": {
-    "category": "DevOps",
-    "parent": "Cloud",
-    "synonyms": []
-  },
-  "Pulumi": {
-    "category": "DevOps",
-    "parent": "Cloud",
-    "synonyms": []
-  },
-  "Helm": {
-    "category": "DevOps",
-    "parent": "Cloud",
-    "synonyms": []
-  },
-  "ArgoCD": {
-    "category": "DevOps",
-    "parent": "Cloud",
-    "synonyms": []
-  },
-  "Prometheus": {
-    "category": "DevOps",
-    "parent": "Cloud",
-    "synonyms": []
-  },
-  "Grafana": {
-    "category": "DevOps",
-    "parent": "Cloud",
-    "synonyms": []
-  },
-  "Nginx": {
-    "category": "DevOps",
-    "parent": "Cloud",
-    "synonyms": []
-  },
-  "Apache": {
-    "category": "DevOps",
-    "parent": "Cloud",
-    "synonyms": []
-  },
-  "Vagrant": {
-    "category": "DevOps",
-    "parent": "Cloud",
-    "synonyms": []
-  },
-  "Chef": {
-    "category": "DevOps",
-    "parent": "Cloud",
-    "synonyms": []
-  },
-  "Puppet": {
-    "category": "DevOps",
-    "parent": "Cloud",
-    "synonyms": []
-  },
-  "New Relic": {
-    "category": "DevOps",
-    "parent": "Cloud",
-    "synonyms": []
-  },
-  "Datadog": {
-    "category": "DevOps",
-    "parent": "Cloud",
-    "synonyms": []
-  },
-  "Splunk": {
-    "category": "DevOps",
-    "parent": "Cloud",
-    "synonyms": []
-  },
-
-  "AWS": {
-    "category": "Cloud",
-    "parent": "Infrastructure",
-    "synonyms": ["amazon web services"]
-  },
-  "Azure": {
-    "category": "Cloud",
-    "parent": "Infrastructure",
-    "synonyms": ["microsoft azure"]
-  },
-  "Google Cloud": {
-    "category": "Cloud",
-    "parent": "Infrastructure",
-    "synonyms": ["gcp", "google cloud platform"]
-  },
-  "Heroku": {
-    "category": "Cloud",
-    "parent": "Infrastructure",
-    "synonyms": []
-  },
-  "Vercel": {
-    "category": "Cloud",
-    "parent": "Infrastructure",
-    "synonyms": []
-  },
-  "Netlify": {
-    "category": "Cloud",
-    "parent": "Infrastructure",
-    "synonyms": []
-  },
-  "DigitalOcean": {
-    "category": "Cloud",
-    "parent": "Infrastructure",
-    "synonyms": []
-  },
-  "Cloudflare": {
-    "category": "Cloud",
-    "parent": "Infrastructure",
-    "synonyms": []
-  },
-  "Render": {
-    "category": "Cloud",
-    "parent": "Infrastructure",
-    "synonyms": []
-  },
-  "Railway": {
-    "category": "Cloud",
-    "parent": "Infrastructure",
-    "synonyms": []
-  },
-  "Linode": {
-    "category": "Cloud",
-    "parent": "Infrastructure",
-    "synonyms": ["akamai cloud"]
-  },
-  "AWS Lambda": {
-    "category": "Cloud",
-    "parent": "Infrastructure",
-    "synonyms": ["serverless"]
-  },
-  "AWS S3": {
-    "category": "Cloud",
-    "parent": "Infrastructure",
-    "synonyms": []
-  },
-  "AWS EC2": {
-    "category": "Cloud",
-    "parent": "Infrastructure",
-    "synonyms": []
-  },
-  "AWS RDS": {
-    "category": "Cloud",
-    "parent": "Infrastructure",
-    "synonyms": []
-  },
-
-  "TensorFlow": {
-    "category": "Deep Learning",
-    "parent": "Machine Learning",
-    "synonyms": []
-  },
-  "PyTorch": {
-    "category": "Deep Learning",
-    "parent": "Machine Learning",
-    "synonyms": []
-  },
-  "Keras": {
-    "category": "Deep Learning",
-    "parent": "Machine Learning",
-    "synonyms": []
-  },
-  "JAX": {
-    "category": "Deep Learning",
-    "parent": "Machine Learning",
-    "synonyms": []
-  },
-  "Hugging Face": {
-    "category": "Deep Learning",
-    "parent": "Machine Learning",
-    "synonyms": ["transformers"]
-  },
-  "OpenCV": {
-    "category": "Deep Learning",
-    "parent": "Machine Learning",
-    "synonyms": ["cv2"]
-  },
-  "ONNX": {
-    "category": "Deep Learning",
-    "parent": "Machine Learning",
-    "synonyms": []
-  },
-
-  "Scikit-learn": {
-    "category": "Machine Learning",
-    "parent": "AI",
-    "synonyms": ["sklearn"]
-  },
-  "XGBoost": {
-    "category": "Machine Learning",
-    "parent": "AI",
-    "synonyms": []
-  },
-  "LightGBM": {
-    "category": "Machine Learning",
-    "parent": "AI",
-    "synonyms": []
-  },
-  "CatBoost": {
-    "category": "Machine Learning",
-    "parent": "AI",
-    "synonyms": []
-  },
-  "MLflow": {
-    "category": "Machine Learning",
-    "parent": "AI",
-    "synonyms": []
-  },
-  "Weights & Biases": {
-    "category": "Machine Learning",
-    "parent": "AI",
-    "synonyms": ["wandb"]
-  },
-  "DVC": {
-    "category": "Machine Learning",
-    "parent": "AI",
-    "synonyms": ["data version control"]
-  },
-  "Kubeflow": {
-    "category": "Machine Learning",
-    "parent": "AI",
-    "synonyms": []
-  },
-  "Apache Spark": {
-    "category": "Machine Learning",
-    "parent": "AI",
-    "synonyms": ["spark", "pyspark"]
-  },
-  "Airflow": {
-    "category": "Machine Learning",
-    "parent": "AI",
-    "synonyms": ["apache airflow"]
-  },
-
-  "NLP": {
-    "category": "AI",
-    "parent": "Machine Learning",
-    "synonyms": ["natural language processing"]
-  },
-  "Computer Vision": {
-    "category": "AI",
-    "parent": "Machine Learning",
-    "synonyms": ["cv"]
-  },
-  "Deep Learning": {
-    "category": "AI",
-    "parent": "Machine Learning",
-    "synonyms": []
-  },
-  "Reinforcement Learning": {
-    "category": "AI",
-    "parent": "Machine Learning",
-    "synonyms": ["rl"]
-  },
-  "Generative AI": {
-    "category": "AI",
-    "parent": "Machine Learning",
-    "synonyms": ["genai"]
-  },
-  "LLM": {
-    "category": "AI",
-    "parent": "Machine Learning",
-    "synonyms": ["large language models"]
-  },
-  "Prompt Engineering": {
-    "category": "AI",
-    "parent": "Machine Learning",
-    "synonyms": []
-  },
-  "LangChain": {
-    "category": "AI",
-    "parent": "Machine Learning",
-    "synonyms": []
-  },
-  "LlamaIndex": {
-    "category": "AI",
-    "parent": "Machine Learning",
-    "synonyms": []
-  },
-  "RAG": {
-    "category": "AI",
-    "parent": "Machine Learning",
-    "synonyms": ["retrieval augmented generation"]
-  },
-  "Fine-tuning": {
-    "category": "AI",
-    "parent": "Machine Learning",
-    "synonyms": []
-  },
-  "Vector Databases": {
-    "category": "AI",
-    "parent": "Machine Learning",
-    "synonyms": ["pinecone", "weaviate", "qdrant", "chroma"]
-  },
-  "OpenAI API": {
-    "category": "AI",
-    "parent": "Machine Learning",
-    "synonyms": ["chatgpt api"]
-  },
-
-  "Pandas": {
-    "category": "Data Science",
-    "parent": "Data",
-    "synonyms": []
-  },
-  "NumPy": {
-    "category": "Data Science",
-    "parent": "Data",
-    "synonyms": []
-  },
-  "Matplotlib": {
-    "category": "Data Science",
-    "parent": "Data",
-    "synonyms": []
-  },
-  "Seaborn": {
-    "category": "Data Science",
-    "parent": "Data",
-    "synonyms": []
-  },
-  "Plotly": {
-    "category": "Data Science",
-    "parent": "Data",
-    "synonyms": []
-  },
-  "SciPy": {
-    "category": "Data Science",
-    "parent": "Data",
-    "synonyms": []
-  },
-  "Statsmodels": {
-    "category": "Data Science",
-    "parent": "Data",
-    "synonyms": []
-  },
-  "Jupyter Notebook": {
-    "category": "Data Science",
-    "parent": "Data",
-    "synonyms": ["jupyter", "ipynb"]
-  },
-  "Google Colab": {
-    "category": "Data Science",
-    "parent": "Data",
-    "synonyms": ["colab"]
-  },
-
-  "Power BI": {
-    "category": "Data Visualization",
-    "parent": "Data",
-    "synonyms": []
-  },
-  "Tableau": {
-    "category": "Data Visualization",
-    "parent": "Data",
-    "synonyms": []
-  },
-  "Looker": {
-    "category": "Data Visualization",
-    "parent": "Data",
-    "synonyms": []
-  },
-  "D3.js": {
-    "category": "Data Visualization",
-    "parent": "Data",
-    "synonyms": ["d3"]
-  },
-  "Metabase": {
-    "category": "Data Visualization",
-    "parent": "Data",
-    "synonyms": []
-  },
-  "Google Data Studio": {
-    "category": "Data Visualization",
-    "parent": "Data",
-    "synonyms": ["looker studio"]
-  },
-
-  "Excel": {
-    "category": "Productivity",
-    "parent": "Business",
-    "synonyms": ["microsoft excel"]
-  },
-  "Google Sheets": {
-    "category": "Productivity",
-    "parent": "Business",
-    "synonyms": []
-  },
-  "Microsoft Office": {
-    "category": "Productivity",
-    "parent": "Business",
-    "synonyms": ["ms office"]
-  },
-  "Google Workspace": {
-    "category": "Productivity",
-    "parent": "Business",
-    "synonyms": ["gsuite"]
-  },
-  "Word": {
-    "category": "Productivity",
-    "parent": "Business",
-    "synonyms": ["microsoft word"]
-  },
-  "PowerPoint": {
-    "category": "Productivity",
-    "parent": "Business",
-    "synonyms": ["ms powerpoint"]
-  },
-  "Notion": {
-    "category": "Productivity",
-    "parent": "Business",
-    "synonyms": []
-  },
-  "Confluence": {
-    "category": "Productivity",
-    "parent": "Business",
-    "synonyms": []
-  },
-  "Airtable": {
-    "category": "Productivity",
-    "parent": "Business",
-    "synonyms": []
-  },
-  "Obsidian": {
-    "category": "Productivity",
-    "parent": "Business",
-    "synonyms": []
-  },
-
-  "Linux": {
-    "category": "Operating Systems",
-    "parent": "Infrastructure",
-    "synonyms": []
-  },
-  "Unix": {
-    "category": "Operating Systems",
-    "parent": "Infrastructure",
-    "synonyms": []
-  },
-  "Ubuntu": {
-    "category": "Operating Systems",
-    "parent": "Infrastructure",
-    "synonyms": []
-  },
-  "Windows": {
-    "category": "Operating Systems",
-    "parent": "Infrastructure",
-    "synonyms": ["windows server"]
-  },
-  "macOS": {
-    "category": "Operating Systems",
-    "parent": "Infrastructure",
-    "synonyms": []
-  },
-  "CentOS": {
-    "category": "Operating Systems",
-    "parent": "Infrastructure",
-    "synonyms": []
-  },
-  "Debian": {
-    "category": "Operating Systems",
-    "parent": "Infrastructure",
-    "synonyms": []
-  },
-
-  "VS Code": {
-    "category": "Developer Tools",
-    "parent": "Technical Skills",
-    "synonyms": ["visual studio code", "vscode"]
-  },
-  "Visual Studio": {
-    "category": "Developer Tools",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "IntelliJ IDEA": {
-    "category": "Developer Tools",
-    "parent": "Technical Skills",
-    "synonyms": ["intellij"]
-  },
-  "PyCharm": {
-    "category": "Developer Tools",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "Eclipse": {
-    "category": "Developer Tools",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "Vim": {
-    "category": "Developer Tools",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "Neovim": {
-    "category": "Developer Tools",
-    "parent": "Technical Skills",
-    "synonyms": ["nvim"]
-  },
-  "Emacs": {
-    "category": "Developer Tools",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "Sublime Text": {
-    "category": "Developer Tools",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "Xcode": {
-    "category": "Developer Tools",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "Android Studio": {
-    "category": "Developer Tools",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "Postman": {
-    "category": "Developer Tools",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "Insomnia": {
-    "category": "Developer Tools",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "DBeaver": {
-    "category": "Developer Tools",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "TablePlus": {
-    "category": "Developer Tools",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "Terminal": {
-    "category": "Developer Tools",
-    "parent": "Technical Skills",
-    "synonyms": ["command line", "cli"]
-  },
-  "npm": {
-    "category": "Developer Tools",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "yarn": {
-    "category": "Developer Tools",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "pnpm": {
-    "category": "Developer Tools",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "pip": {
-    "category": "Developer Tools",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "Maven": {
-    "category": "Developer Tools",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "Gradle": {
-    "category": "Developer Tools",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "Make": {
-    "category": "Developer Tools",
-    "parent": "Technical Skills",
-    "synonyms": ["makefile"]
-  },
-  "Cursor": {
-    "category": "Developer Tools",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-
-  "Jest": {
-    "category": "Testing",
-    "parent": "Software Development",
-    "synonyms": []
-  },
-  "Pytest": {
-    "category": "Testing",
-    "parent": "Software Development",
-    "synonyms": []
-  },
-  "JUnit": {
-    "category": "Testing",
-    "parent": "Software Development",
-    "synonyms": []
-  },
-  "Selenium": {
-    "category": "Testing",
-    "parent": "Software Development",
-    "synonyms": []
-  },
-  "Playwright": {
-    "category": "Testing",
-    "parent": "Software Development",
-    "synonyms": []
-  },
-  "Cypress": {
-    "category": "Testing",
-    "parent": "Software Development",
-    "synonyms": []
-  },
-  "Vitest": {
-    "category": "Testing",
-    "parent": "Software Development",
-    "synonyms": []
-  },
-  "Mocha": {
-    "category": "Testing",
-    "parent": "Software Development",
-    "synonyms": []
-  },
-  "Chai": {
-    "category": "Testing",
-    "parent": "Software Development",
-    "synonyms": []
-  },
-  "Testing Library": {
-    "category": "Testing",
-    "parent": "Software Development",
-    "synonyms": ["react testing library"]
-  },
-  "Appium": {
-    "category": "Testing",
-    "parent": "Software Development",
-    "synonyms": []
-  },
-  "k6": {
-    "category": "Testing",
-    "parent": "Software Development",
-    "synonyms": []
-  },
-
-  "Microservices": {
-    "category": "Architecture",
-    "parent": "Backend",
-    "synonyms": []
-  },
-  "System Design": {
-    "category": "Architecture",
-    "parent": "Backend",
-    "synonyms": []
-  },
-  "Event-Driven Architecture": {
-    "category": "Architecture",
-    "parent": "Backend",
-    "synonyms": ["eda"]
-  },
-  "Serverless": {
-    "category": "Architecture",
-    "parent": "Backend",
-    "synonyms": []
-  },
-  "Domain-Driven Design": {
-    "category": "Architecture",
-    "parent": "Backend",
-    "synonyms": ["ddd"]
-  },
-  "CQRS": {
-    "category": "Architecture",
-    "parent": "Backend",
-    "synonyms": []
-  },
-  "Clean Architecture": {
-    "category": "Architecture",
-    "parent": "Backend",
-    "synonyms": []
-  },
-  "Design Patterns": {
-    "category": "Architecture",
-    "parent": "Backend",
-    "synonyms": []
-  },
-  "Monorepo": {
-    "category": "Architecture",
-    "parent": "Backend",
-    "synonyms": []
-  },
-
-  "Apache Kafka": {
-    "category": "Messaging",
-    "parent": "Infrastructure",
-    "synonyms": ["kafka"]
-  },
-  "RabbitMQ": {
-    "category": "Messaging",
-    "parent": "Infrastructure",
-    "synonyms": []
-  },
-  "MQTT": {
-    "category": "Messaging",
-    "parent": "Infrastructure",
-    "synonyms": []
-  },
-  "Apache ActiveMQ": {
-    "category": "Messaging",
-    "parent": "Infrastructure",
-    "synonyms": []
-  },
-  "AWS SQS": {
-    "category": "Messaging",
-    "parent": "Infrastructure",
-    "synonyms": []
-  },
-  "Pub/Sub": {
-    "category": "Messaging",
-    "parent": "Infrastructure",
-    "synonyms": ["google pub/sub"]
-  },
-
-  "Android": {
-    "category": "Mobile Development",
-    "parent": "Software Development",
-    "synonyms": []
-  },
-  "iOS": {
-    "category": "Mobile Development",
-    "parent": "Software Development",
-    "synonyms": []
-  },
-  "Flutter": {
-    "category": "Mobile Development",
-    "parent": "Software Development",
-    "synonyms": []
-  },
-  "React Native": {
-    "category": "Mobile Development",
-    "parent": "Software Development",
-    "synonyms": []
-  },
-  "Expo": {
-    "category": "Mobile Development",
-    "parent": "Software Development",
-    "synonyms": []
-  },
-  "Ionic": {
-    "category": "Mobile Development",
-    "parent": "Software Development",
-    "synonyms": []
-  },
-  "Capacitor": {
-    "category": "Mobile Development",
-    "parent": "Software Development",
-    "synonyms": []
-  },
-
-  "Cybersecurity": {
-    "category": "Security",
-    "parent": "Infrastructure",
-    "synonyms": []
-  },
-  "Ethical Hacking": {
-    "category": "Security",
-    "parent": "Infrastructure",
-    "synonyms": ["penetration testing", "pentesting"]
-  },
-  "Network Security": {
-    "category": "Security",
-    "parent": "Infrastructure",
-    "synonyms": []
-  },
-  "Application Security": {
-    "category": "Security",
-    "parent": "Infrastructure",
-    "synonyms": ["appsec"]
-  },
-  "OWASP": {
-    "category": "Security",
-    "parent": "Infrastructure",
-    "synonyms": []
-  },
-  "Cryptography": {
-    "category": "Security",
-    "parent": "Infrastructure",
-    "synonyms": []
-  },
-  "SSL/TLS": {
-    "category": "Security",
-    "parent": "Infrastructure",
-    "synonyms": ["https"]
-  },
-  "Firewalls": {
-    "category": "Security",
-    "parent": "Infrastructure",
-    "synonyms": []
-  },
-  "SIEM": {
-    "category": "Security",
-    "parent": "Infrastructure",
-    "synonyms": []
-  },
-  "Burp Suite": {
-    "category": "Security",
-    "parent": "Infrastructure",
-    "synonyms": []
-  },
-  "Metasploit": {
-    "category": "Security",
-    "parent": "Infrastructure",
-    "synonyms": []
-  },
-  "Nmap": {
-    "category": "Security",
-    "parent": "Infrastructure",
-    "synonyms": []
-  },
-  "Wireshark": {
-    "category": "Security",
-    "parent": "Infrastructure",
-    "synonyms": []
-  },
-  "Kali Linux": {
-    "category": "Security",
-    "parent": "Infrastructure",
-    "synonyms": []
-  },
-  "Zero Trust": {
-    "category": "Security",
-    "parent": "Infrastructure",
-    "synonyms": []
-  },
-  "IAM": {
-    "category": "Security",
-    "parent": "Infrastructure",
-    "synonyms": ["identity and access management"]
-  },
-
-  "Data Structures": {
-    "category": "Computer Science",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "Algorithms": {
-    "category": "Computer Science",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "Competitive Programming": {
-    "category": "Computer Science",
-    "parent": "Technical Skills",
-    "synonyms": ["cp"]
-  },
-  "Dynamic Programming": {
-    "category": "Computer Science",
-    "parent": "Technical Skills",
-    "synonyms": ["dp"]
-  },
-  "Graph Theory": {
-    "category": "Computer Science",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "Operating Systems": {
-    "category": "Computer Science",
-    "parent": "Technical Skills",
-    "synonyms": ["os"]
-  },
-  "Computer Networks": {
-    "category": "Computer Science",
-    "parent": "Technical Skills",
-    "synonyms": ["networking"]
-  },
-  "Distributed Systems": {
-    "category": "Computer Science",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "Object-Oriented Programming": {
-    "category": "Computer Science",
-    "parent": "Technical Skills",
-    "synonyms": ["oop"]
-  },
-  "Functional Programming": {
-    "category": "Computer Science",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "Concurrency": {
-    "category": "Computer Science",
-    "parent": "Technical Skills",
-    "synonyms": ["multithreading", "parallel programming"]
-  },
-  "Compiler Design": {
-    "category": "Computer Science",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "Blockchain": {
-    "category": "Computer Science",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "WebAssembly": {
-    "category": "Computer Science",
-    "parent": "Technical Skills",
-    "synonyms": ["wasm"]
-  },
-  "Embedded Systems": {
-    "category": "Computer Science",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "IoT": {
-    "category": "Computer Science",
-    "parent": "Technical Skills",
-    "synonyms": ["internet of things"]
-  },
-  "FPGA": {
-    "category": "Computer Science",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-
-  "Figma": {
-    "category": "Design",
-    "parent": "Creative",
-    "synonyms": []
-  },
-  "Adobe XD": {
-    "category": "Design",
-    "parent": "Creative",
-    "synonyms": []
-  },
-  "Sketch": {
-    "category": "Design",
-    "parent": "Creative",
-    "synonyms": []
-  },
-  "Adobe Photoshop": {
-    "category": "Design",
-    "parent": "Creative",
-    "synonyms": ["photoshop"]
-  },
-  "Adobe Illustrator": {
-    "category": "Design",
-    "parent": "Creative",
-    "synonyms": ["illustrator"]
-  },
-  "Adobe Premiere Pro": {
-    "category": "Design",
-    "parent": "Creative",
-    "synonyms": ["premiere pro"]
-  },
-  "After Effects": {
-    "category": "Design",
-    "parent": "Creative",
-    "synonyms": []
-  },
-  "Canva": {
-    "category": "Design",
-    "parent": "Creative",
-    "synonyms": []
-  },
-  "InVision": {
-    "category": "Design",
-    "parent": "Creative",
-    "synonyms": []
-  },
-  "Zeplin": {
-    "category": "Design",
-    "parent": "Creative",
-    "synonyms": []
-  },
-  "UI/UX Design": {
-    "category": "Design",
-    "parent": "Creative",
-    "synonyms": ["ui design", "ux design"]
-  },
-  "Wireframing": {
-    "category": "Design",
-    "parent": "Creative",
-    "synonyms": []
-  },
-  "Prototyping": {
-    "category": "Design",
-    "parent": "Creative",
-    "synonyms": []
-  },
-  "User Research": {
-    "category": "Design",
-    "parent": "Creative",
-    "synonyms": []
-  },
-  "Design Systems": {
-    "category": "Design",
-    "parent": "Creative",
-    "synonyms": []
-  },
-  "Accessibility": {
-    "category": "Design",
-    "parent": "Creative",
-    "synonyms": ["a11y", "wcag"]
-  },
-  "Responsive Design": {
-    "category": "Design",
-    "parent": "Creative",
-    "synonyms": []
-  },
-  "Blender": {
-    "category": "Design",
-    "parent": "Creative",
-    "synonyms": []
-  },
-  "Unity": {
-    "category": "Design",
-    "parent": "Creative",
-    "synonyms": []
-  },
-  "Unreal Engine": {
-    "category": "Design",
-    "parent": "Creative",
-    "synonyms": []
-  },
-
-  "Jira": {
-    "category": "Project Management",
-    "parent": "Management",
-    "synonyms": []
-  },
-  "Trello": {
-    "category": "Project Management",
-    "parent": "Management",
-    "synonyms": []
-  },
-  "Asana": {
-    "category": "Project Management",
-    "parent": "Management",
-    "synonyms": []
-  },
-  "Linear": {
-    "category": "Project Management",
-    "parent": "Management",
-    "synonyms": []
-  },
-  "Monday.com": {
-    "category": "Project Management",
-    "parent": "Management",
-    "synonyms": []
-  },
-  "ClickUp": {
-    "category": "Project Management",
-    "parent": "Management",
-    "synonyms": []
-  },
-  "Basecamp": {
-    "category": "Project Management",
-    "parent": "Management",
-    "synonyms": []
-  },
-  "Slack": {
-    "category": "Project Management",
-    "parent": "Management",
-    "synonyms": []
-  },
-  "Microsoft Teams": {
-    "category": "Project Management",
-    "parent": "Management",
-    "synonyms": ["ms teams"]
-  },
-  "Zoom": {
-    "category": "Project Management",
-    "parent": "Management",
-    "synonyms": []
-  },
-
-  "Agile": {
-    "category": "Methodology",
-    "parent": "Management",
-    "synonyms": []
-  },
-  "Scrum": {
-    "category": "Methodology",
-    "parent": "Management",
-    "synonyms": []
-  },
-  "Kanban": {
-    "category": "Methodology",
-    "parent": "Management",
-    "synonyms": []
-  },
-  "DevOps": {
-    "category": "Methodology",
-    "parent": "Management",
-    "synonyms": []
-  },
-  "Test-Driven Development": {
-    "category": "Methodology",
-    "parent": "Management",
-    "synonyms": ["tdd"]
-  },
-  "Behavior-Driven Development": {
-    "category": "Methodology",
-    "parent": "Management",
-    "synonyms": ["bdd"]
-  },
-  "Pair Programming": {
-    "category": "Methodology",
-    "parent": "Management",
-    "synonyms": []
-  },
-  "Code Review": {
-    "category": "Methodology",
-    "parent": "Management",
-    "synonyms": []
-  },
-  "SAFe": {
-    "category": "Methodology",
-    "parent": "Management",
-    "synonyms": ["scaled agile"]
-  },
-  "Lean": {
-    "category": "Methodology",
-    "parent": "Management",
-    "synonyms": []
-  },
-  "Six Sigma": {
-    "category": "Methodology",
-    "parent": "Management",
-    "synonyms": []
-  },
-  "ITIL": {
-    "category": "Methodology",
-    "parent": "Management",
-    "synonyms": []
-  },
-
-  "Technical Writing": {
-    "category": "Communication",
-    "parent": "General",
-    "synonyms": []
-  },
-  "Documentation": {
-    "category": "Communication",
-    "parent": "General",
-    "synonyms": []
-  },
-  "Code Documentation": {
-    "category": "Communication",
-    "parent": "General",
-    "synonyms": []
-  },
-  "API Documentation": {
-    "category": "Communication",
-    "parent": "General",
-    "synonyms": []
-  },
-  "Swagger": {
-    "category": "Communication",
-    "parent": "General",
-    "synonyms": ["openapi"]
-  },
-  "Markdown": {
-    "category": "Communication",
-    "parent": "General",
-    "synonyms": ["md"]
-  },
-
-  "Communication": {
-    "category": "Soft Skills",
-    "parent": "General",
-    "synonyms": []
-  },
-  "Leadership": {
-    "category": "Soft Skills",
-    "parent": "General",
-    "synonyms": []
-  },
-  "Problem Solving": {
-    "category": "Soft Skills",
-    "parent": "General",
-    "synonyms": []
-  },
-  "Teamwork": {
-    "category": "Soft Skills",
-    "parent": "General",
-    "synonyms": []
-  },
-  "Critical Thinking": {
-    "category": "Soft Skills",
-    "parent": "General",
-    "synonyms": []
-  },
-  "Time Management": {
-    "category": "Soft Skills",
-    "parent": "General",
-    "synonyms": []
-  },
-  "Adaptability": {
-    "category": "Soft Skills",
-    "parent": "General",
-    "synonyms": []
-  },
-  "Creativity": {
-    "category": "Soft Skills",
-    "parent": "General",
-    "synonyms": []
-  },
-  "Mentoring": {
-    "category": "Soft Skills",
-    "parent": "General",
-    "synonyms": []
-  },
-  "Public Speaking": {
-    "category": "Soft Skills",
-    "parent": "General",
-    "synonyms": []
-  },
-  "Negotiation": {
-    "category": "Soft Skills",
-    "parent": "General",
-    "synonyms": []
-  },
-  "Conflict Resolution": {
-    "category": "Soft Skills",
-    "parent": "General",
-    "synonyms": []
-  },
-  "Emotional Intelligence": {
-    "category": "Soft Skills",
-    "parent": "General",
-    "synonyms": ["eq"]
-  },
-  "Analytical Thinking": {
-    "category": "Soft Skills",
-    "parent": "General",
-    "synonyms": []
-  },
-  "Attention to Detail": {
-    "category": "Soft Skills",
-    "parent": "General",
-    "synonyms": []
-  },
-
-  "SEO": {
-    "category": "Marketing",
-    "parent": "Business",
-    "synonyms": ["search engine optimization"]
-  },
-  "Google Analytics": {
-    "category": "Marketing",
-    "parent": "Business",
-    "synonyms": ["ga4"]
-  },
-  "Digital Marketing": {
-    "category": "Marketing",
-    "parent": "Business",
-    "synonyms": []
-  },
-  "Content Marketing": {
-    "category": "Marketing",
-    "parent": "Business",
-    "synonyms": []
-  },
-  "Social Media Marketing": {
-    "category": "Marketing",
-    "parent": "Business",
-    "synonyms": ["smm"]
-  },
-  "Email Marketing": {
-    "category": "Marketing",
-    "parent": "Business",
-    "synonyms": []
-  },
-  "Growth Hacking": {
-    "category": "Marketing",
-    "parent": "Business",
-    "synonyms": []
-  },
-  "A/B Testing": {
-    "category": "Marketing",
-    "parent": "Business",
-    "synonyms": []
-  },
-
-  "Financial Modeling": {
-    "category": "Finance",
-    "parent": "Business",
-    "synonyms": []
-  },
-  "Data Analysis": {
-    "category": "Finance",
-    "parent": "Business",
-    "synonyms": []
-  },
-  "Business Intelligence": {
-    "category": "Finance",
-    "parent": "Business",
-    "synonyms": ["bi"]
-  },
-  "ERP": {
-    "category": "Finance",
-    "parent": "Business",
-    "synonyms": ["enterprise resource planning"]
-  },
-  "SAP": {
-    "category": "Finance",
-    "parent": "Business",
-    "synonyms": []
-  },
-  "Salesforce": {
-    "category": "Finance",
-    "parent": "Business",
-    "synonyms": ["crm", "sfdc"]
-  },
-  "HubSpot": {
-    "category": "Finance",
-    "parent": "Business",
-    "synonyms": []
-  },
-  "Stripe": {
-    "category": "Finance",
-    "parent": "Business",
-    "synonyms": []
-  },
-  "QuickBooks": {
-    "category": "Finance",
-    "parent": "Business",
-    "synonyms": []
-  },
-
-  "Hadoop": {
-    "category": "Big Data",
-    "parent": "Data",
-    "synonyms": []
-  },
-  "Apache Hive": {
-    "category": "Big Data",
-    "parent": "Data",
-    "synonyms": ["hive"]
-  },
-  "Apache Flink": {
-    "category": "Big Data",
-    "parent": "Data",
-    "synonyms": ["flink"]
+    "category": "Database", "parent": "Data",
+    "synonyms": [],
+    "implies":    ["ORM", "TypeScript", "SQL"],
+    "implied_by": [],
+    "related":    ["SQLAlchemy", "Hibernate", "Node.js", "TypeScript"]
   },
   "Snowflake": {
-    "category": "Big Data",
-    "parent": "Data",
-    "synonyms": []
+    "category": "Big Data", "parent": "Data",
+    "synonyms": [],
+    "implies":    ["SQL", "Data Warehousing", "Cloud"],
+    "implied_by": ["dbt"],
+    "related":    ["BigQuery", "Redshift", "ETL", "Analytics"]
   },
   "BigQuery": {
-    "category": "Big Data",
-    "parent": "Data",
-    "synonyms": ["google bigquery"]
+    "category": "Big Data", "parent": "Data",
+    "synonyms": ["google bigquery"],
+    "implies":    ["SQL", "Data Warehousing", "Google Cloud"],
+    "implied_by": [],
+    "related":    ["Snowflake", "Redshift", "Google Cloud", "ETL"]
+  },
+  "Apache Spark": {
+    "category": "Big Data", "parent": "Data",
+    "synonyms": ["spark", "pyspark"],
+    "implies":    ["Distributed Computing", "Scala", "Python"],
+    "implied_by": ["Databricks"],
+    "related":    ["Hadoop", "Kafka", "ETL", "Machine Learning"]
+  },
+  "Apache Kafka": {
+    "category": "Messaging", "parent": "Infrastructure",
+    "synonyms": ["kafka"],
+    "implies":    ["Event-Driven Architecture", "Distributed Systems", "Streaming"],
+    "implied_by": [],
+    "related":    ["RabbitMQ", "AWS SQS", "Microservices", "Real-Time Processing"]
+  },
+  "RabbitMQ": {
+    "category": "Messaging", "parent": "Infrastructure",
+    "synonyms": [],
+    "implies":    ["Message Queuing", "Event-Driven Architecture"],
+    "implied_by": [],
+    "related":    ["Apache Kafka", "Celery", "Microservices"]
+  },
+  "Machine Learning": {
+    "category": "AI", "parent": "Technical Skills",
+    "synonyms": ["ml"],
+    "implies":    ["Python", "Statistics", "Linear Algebra", "Data Preprocessing"],
+    "implied_by": ["Scikit-learn", "TensorFlow", "PyTorch", "XGBoost", "LightGBM", "CatBoost", "MLflow", "Kubeflow"],
+    "related":    ["Deep Learning", "Data Science", "NLP", "Computer Vision", "Reinforcement Learning", "Pandas", "NumPy", "Matplotlib"]
+  },
+  "Deep Learning": {
+    "category": "AI", "parent": "Machine Learning",
+    "synonyms": ["dl"],
+    "implies":    ["Machine Learning", "Python", "Linear Algebra", "Neural Networks"],
+    "implied_by": ["TensorFlow", "PyTorch", "Keras", "Computer Vision", "NLP"],
+    "related":    ["GPU Computing", "CUDA", "Transformers", "CNNs", "RNNs"]
+  },
+  "NLP": {
+    "category": "AI", "parent": "Machine Learning",
+    "synonyms": ["natural language processing"],
+    "implies":    ["Machine Learning", "Python", "Text Processing"],
+    "implied_by": ["Hugging Face", "LangChain", "LLM", "SpaCy"],
+    "related":    ["Deep Learning", "Transformers", "BERT", "GPT", "Sentiment Analysis"]
+  },
+  "Computer Vision": {
+    "category": "AI", "parent": "Machine Learning",
+    "synonyms": ["cv"],
+    "implies":    ["Machine Learning", "Python", "Image Processing"],
+    "implied_by": ["OpenCV"],
+    "related":    ["Deep Learning", "CNNs", "Object Detection", "Image Segmentation"]
+  },
+  "Generative AI": {
+    "category": "AI", "parent": "Machine Learning",
+    "synonyms": ["genai"],
+    "implies":    ["LLM", "Prompt Engineering", "Python"],
+    "implied_by": [],
+    "related":    ["LangChain", "RAG", "Fine-tuning", "OpenAI API", "Hugging Face"]
+  },
+  "LLM": {
+    "category": "AI", "parent": "Machine Learning",
+    "synonyms": ["large language models"],
+    "implies":    ["NLP", "Transformers", "Python"],
+    "implied_by": ["LangChain", "LlamaIndex", "RAG"],
+    "related":    ["Prompt Engineering", "Fine-tuning", "OpenAI API", "Hugging Face", "Generative AI"]
+  },
+  "LangChain": {
+    "category": "AI", "parent": "Machine Learning",
+    "synonyms": [],
+    "implies":    ["Python", "LLM", "RAG"],
+    "implied_by": [],
+    "related":    ["LlamaIndex", "OpenAI API", "Vector Databases", "Generative AI"]
+  },
+  "RAG": {
+    "category": "AI", "parent": "Machine Learning",
+    "synonyms": ["retrieval augmented generation"],
+    "implies":    ["LLM", "Vector Databases", "Python"],
+    "implied_by": [],
+    "related":    ["LangChain", "LlamaIndex", "Embeddings", "Semantic Search"]
+  },
+  "TensorFlow": {
+    "category": "Deep Learning", "parent": "Machine Learning",
+    "synonyms": [],
+    "implies":    ["Python", "Deep Learning", "Machine Learning"],
+    "implied_by": ["Keras"],
+    "related":    ["PyTorch", "Keras", "GPU Computing", "Model Deployment"]
+  },
+  "PyTorch": {
+    "category": "Deep Learning", "parent": "Machine Learning",
+    "synonyms": [],
+    "implies":    ["Python", "Deep Learning", "Machine Learning"],
+    "implied_by": [],
+    "related":    ["TensorFlow", "Hugging Face", "GPU Computing", "Research"]
+  },
+  "Scikit-learn": {
+    "category": "Machine Learning", "parent": "AI",
+    "synonyms": ["sklearn"],
+    "implies":    ["Python", "Machine Learning", "NumPy", "Pandas"],
+    "implied_by": [],
+    "related":    ["XGBoost", "LightGBM", "Feature Engineering", "Model Evaluation"]
+  },
+  "Pandas": {
+    "category": "Data Science", "parent": "Data",
+    "synonyms": [],
+    "implies":    ["Python", "Data Manipulation", "Data Analysis"],
+    "implied_by": [],
+    "related":    ["NumPy", "Matplotlib", "Seaborn", "Jupyter Notebook", "ETL"]
+  },
+  "NumPy": {
+    "category": "Data Science", "parent": "Data",
+    "synonyms": [],
+    "implies":    ["Python", "Numerical Computing", "Linear Algebra"],
+    "implied_by": ["Pandas", "Scikit-learn", "TensorFlow", "PyTorch"],
+    "related":    ["SciPy", "MATLAB", "Matrix Operations"]
+  },
+  "React": {
+    "category": "Frontend", "parent": "Web Development",
+    "synonyms": ["reactjs"],
+    "implies":    ["JavaScript", "HTML", "CSS", "npm"],
+    "implied_by": ["Next.js", "Redux", "React Native"],
+    "related":    ["Vue.js", "Angular", "Svelte", "TypeScript", "Tailwind CSS"]
+  },
+  "Next.js": {
+    "category": "Frontend", "parent": "Web Development",
+    "synonyms": [],
+    "implies":    ["React", "JavaScript", "TypeScript", "Node.js", "CSS"],
+    "implied_by": [],
+    "related":    ["Vercel", "SSR", "SSG", "Tailwind CSS", "Prisma"]
+  },
+  "Vue.js": {
+    "category": "Frontend", "parent": "Web Development",
+    "synonyms": ["vue"],
+    "implies":    ["JavaScript", "HTML", "CSS"],
+    "implied_by": ["Nuxt.js"],
+    "related":    ["React", "Angular", "Nuxt.js", "Tailwind CSS"]
+  },
+  "Angular": {
+    "category": "Frontend", "parent": "Web Development",
+    "synonyms": [],
+    "implies":    ["TypeScript", "JavaScript", "HTML", "CSS", "npm"],
+    "implied_by": [],
+    "related":    ["React", "Vue.js", "RxJS", "NgRx"]
+  },
+  "Tailwind CSS": {
+    "category": "Frontend", "parent": "Web Development",
+    "synonyms": ["tailwind"],
+    "implies":    ["HTML", "CSS"],
+    "implied_by": [],
+    "related":    ["Bootstrap", "CSS", "Responsive Design", "Shadcn UI"]
+  },
+  "Node.js": {
+    "category": "Backend", "parent": "Web Development",
+    "synonyms": ["node"],
+    "implies":    ["JavaScript", "npm", "REST API"],
+    "implied_by": ["Express.js", "NestJS"],
+    "related":    ["Deno", "Backend", "Microservices", "WebSockets"]
+  },
+  "Express.js": {
+    "category": "Backend", "parent": "Web Development",
+    "synonyms": ["express"],
+    "implies":    ["Node.js", "JavaScript", "REST API"],
+    "implied_by": [],
+    "related":    ["NestJS", "Fastify", "Koa", "Middleware"]
+  },
+  "Django": {
+    "category": "Backend", "parent": "Web Development",
+    "synonyms": [],
+    "implies":    ["Python", "ORM", "REST API", "PostgreSQL"],
+    "implied_by": [],
+    "related":    ["Flask", "FastAPI", "Django REST Framework", "Python"]
+  },
+  "Flask": {
+    "category": "Backend", "parent": "Web Development",
+    "synonyms": [],
+    "implies":    ["Python", "REST API"],
+    "implied_by": [],
+    "related":    ["Django", "FastAPI", "SQLAlchemy", "Python"]
+  },
+  "FastAPI": {
+    "category": "Backend", "parent": "Web Development",
+    "synonyms": [],
+    "implies":    ["Python", "REST API", "Pydantic", "Async Programming"],
+    "implied_by": [],
+    "related":    ["Django", "Flask", "Uvicorn", "OpenAPI"]
+  },
+  "Spring Boot": {
+    "category": "Backend", "parent": "Web Development",
+    "synonyms": [],
+    "implies":    ["Java", "REST API", "Maven", "OOP"],
+    "implied_by": [],
+    "related":    ["Hibernate", "Spring Security", "Microservices", "Maven"]
+  },
+  "NestJS": {
+    "category": "Backend", "parent": "Web Development",
+    "synonyms": [],
+    "implies":    ["Node.js", "TypeScript", "REST API"],
+    "implied_by": [],
+    "related":    ["Express.js", "GraphQL", "Microservices"]
+  },
+  "Docker": {
+    "category": "DevOps", "parent": "Cloud",
+    "synonyms": [],
+    "implies":    ["Linux", "Containerization", "Bash"],
+    "implied_by": ["Kubernetes", "Docker Compose"],
+    "related":    ["Kubernetes", "CI/CD", "Microservices", "DevOps"]
+  },
+  "Kubernetes": {
+    "category": "DevOps", "parent": "Cloud",
+    "synonyms": ["k8s"],
+    "implies":    ["Docker", "Linux", "YAML", "Containerization"],
+    "implied_by": ["Helm", "ArgoCD", "Kubeflow"],
+    "related":    ["Docker", "Helm", "ArgoCD", "Microservices", "Cloud"]
+  },
+  "Terraform": {
+    "category": "DevOps", "parent": "Cloud",
+    "synonyms": [],
+    "implies":    ["Infrastructure as Code", "Cloud", "HCL"],
+    "implied_by": [],
+    "related":    ["Ansible", "Pulumi", "AWS", "Azure", "Google Cloud"]
+  },
+  "Ansible": {
+    "category": "DevOps", "parent": "Cloud",
+    "synonyms": [],
+    "implies":    ["Linux", "YAML", "Configuration Management", "Automation"],
+    "implied_by": [],
+    "related":    ["Terraform", "Puppet", "Chef", "DevOps"]
+  },
+  "GitHub Actions": {
+    "category": "DevOps", "parent": "Cloud",
+    "synonyms": [],
+    "implies":    ["CI/CD", "Git", "GitHub", "YAML"],
+    "implied_by": [],
+    "related":    ["Jenkins", "CircleCI", "GitLab CI", "Automation"]
+  },
+  "Git": {
+    "category": "Version Control", "parent": "DevOps",
+    "synonyms": [],
+    "implies":    ["Version Control", "Collaboration"],
+    "implied_by": ["GitHub", "GitLab", "Bitbucket", "GitHub Actions"],
+    "related":    ["GitHub", "GitLab", "Branching Strategy", "Code Review"]
+  },
+  "GitHub": {
+    "category": "Version Control", "parent": "DevOps",
+    "synonyms": [],
+    "implies":    ["Git", "Version Control", "Collaboration"],
+    "implied_by": ["GitHub Actions"],
+    "related":    ["GitLab", "Bitbucket", "Open Source", "CI/CD"]
+  },
+  "AWS": {
+    "category": "Cloud", "parent": "Infrastructure",
+    "synonyms": ["amazon web services"],
+    "implies":    ["Cloud Computing", "IAM", "Linux"],
+    "implied_by": ["AWS Lambda", "AWS S3", "AWS EC2", "AWS RDS", "AWS SQS", "Redshift"],
+    "related":    ["Azure", "Google Cloud", "Docker", "Terraform", "Serverless"]
+  },
+  "Azure": {
+    "category": "Cloud", "parent": "Infrastructure",
+    "synonyms": ["microsoft azure"],
+    "implies":    ["Cloud Computing", "IAM"],
+    "implied_by": [],
+    "related":    ["AWS", "Google Cloud", "PowerShell", "C#", ".NET"]
+  },
+  "Google Cloud": {
+    "category": "Cloud", "parent": "Infrastructure",
+    "synonyms": ["gcp", "google cloud platform"],
+    "implies":    ["Cloud Computing", "IAM"],
+    "implied_by": ["BigQuery", "Firebase", "Pub/Sub", "Firestore"],
+    "related":    ["AWS", "Azure", "Kubernetes", "Terraform"]
+  },
+  "Linux": {
+    "category": "Operating Systems", "parent": "Infrastructure",
+    "synonyms": [],
+    "implies":    ["Bash", "Terminal", "File System Management"],
+    "implied_by": ["Ubuntu", "CentOS", "Debian", "Kali Linux"],
+    "related":    ["Unix", "DevOps", "Systems Programming", "Networking"]
+  },
+  "VS Code": {
+    "category": "Developer Tools", "parent": "Technical Skills",
+    "synonyms": ["visual studio code", "vscode"],
+    "implies":    ["Git", "Extensions"],
+    "implied_by": [],
+    "related":    ["IntelliJ IDEA", "Vim", "Neovim", "Development Environment"]
+  },
+  "Postman": {
+    "category": "Developer Tools", "parent": "Technical Skills",
+    "synonyms": [],
+    "implies":    ["REST API", "API Testing", "HTTP"],
+    "implied_by": [],
+    "related":    ["Insomnia", "API Development", "REST API", "GraphQL"]
+  },
+  "Docker Compose": {
+    "category": "DevOps", "parent": "Cloud",
+    "synonyms": [],
+    "implies":    ["Docker", "YAML", "Containerization"],
+    "implied_by": [],
+    "related":    ["Docker", "Kubernetes", "Microservices"]
+  },
+  "Data Science": {
+    "category": "Data Science", "parent": "Data",
+    "synonyms": [],
+    "implies":    ["Python", "Statistics", "Data Analysis", "Pandas", "NumPy"],
+    "implied_by": [],
+    "related":    ["Machine Learning", "Data Engineering", "Visualization", "Jupyter Notebook"]
+  },
+  "Data Engineering": {
+    "category": "Big Data", "parent": "Data",
+    "synonyms": [],
+    "implies":    ["SQL", "ETL", "Python", "Data Pipelines"],
+    "implied_by": [],
+    "related":    ["Airflow", "Apache Spark", "dbt", "Kafka", "Data Warehousing"]
+  },
+  "System Design": {
+    "category": "Architecture", "parent": "Backend",
+    "synonyms": [],
+    "implies":    ["Distributed Systems", "Scalability", "Database Design"],
+    "implied_by": [],
+    "related":    ["Microservices", "Load Balancing", "Caching", "API Gateway", "CAP Theorem"]
+  },
+  "Microservices": {
+    "category": "Architecture", "parent": "Backend",
+    "synonyms": [],
+    "implies":    ["REST API", "Docker", "API Gateway", "Distributed Systems"],
+    "implied_by": [],
+    "related":    ["Kubernetes", "Service Mesh", "Event-Driven Architecture", "Kafka"]
+  },
+  "REST API": {
+    "category": "Backend", "parent": "Web Development",
+    "synonyms": ["rest"],
+    "implies":    ["HTTP", "JSON", "API Design"],
+    "implied_by": ["Express.js", "Django", "Flask", "FastAPI", "Spring Boot"],
+    "related":    ["GraphQL", "gRPC", "OpenAPI", "Swagger", "Authentication"]
+  },
+  "GraphQL": {
+    "category": "Backend", "parent": "Web Development",
+    "synonyms": [],
+    "implies":    ["API Design", "JSON", "Schema Definition"],
+    "implied_by": [],
+    "related":    ["REST API", "Apollo", "Prisma", "Node.js"]
+  },
+  "Android": {
+    "category": "Mobile Development", "parent": "Software Development",
+    "synonyms": [],
+    "implies":    ["Kotlin", "Java", "Android Studio", "Mobile Development"],
+    "implied_by": [],
+    "related":    ["iOS", "Flutter", "React Native", "Gradle"]
+  },
+  "iOS": {
+    "category": "Mobile Development", "parent": "Software Development",
+    "synonyms": [],
+    "implies":    ["Swift", "Objective-C", "Xcode", "Mobile Development"],
+    "implied_by": [],
+    "related":    ["Android", "Flutter", "React Native"]
+  },
+  "Flutter": {
+    "category": "Mobile Development", "parent": "Software Development",
+    "synonyms": [],
+    "implies":    ["Dart", "Mobile Development", "Cross-Platform"],
+    "implied_by": [],
+    "related":    ["React Native", "iOS", "Android", "Firebase"]
+  },
+  "React Native": {
+    "category": "Mobile Development", "parent": "Software Development",
+    "synonyms": [],
+    "implies":    ["React", "JavaScript", "Mobile Development", "Cross-Platform"],
+    "implied_by": [],
+    "related":    ["Flutter", "Expo", "iOS", "Android"]
+  },
+  "Figma": {
+    "category": "Design", "parent": "Creative",
+    "synonyms": [],
+    "implies":    ["UI/UX Design", "Prototyping", "Design Systems"],
+    "implied_by": [],
+    "related":    ["Adobe XD", "Sketch", "Wireframing", "Responsive Design", "Zeplin"]
+  },
+  "UI/UX Design": {
+    "category": "Design", "parent": "Creative",
+    "synonyms": ["ui design", "ux design"],
+    "implies":    ["Wireframing", "Prototyping", "User Research"],
+    "implied_by": ["Figma", "Adobe XD", "Sketch"],
+    "related":    ["Accessibility", "Design Systems", "Responsive Design", "CSS"]
+  },
+  "Unity": {
+    "category": "Game Dev", "parent": "Software Development",
+    "synonyms": [],
+    "implies":    ["C#", "Game Development", "3D Modeling Basics"],
+    "implied_by": [],
+    "related":    ["Unreal Engine", "C#", "OpenGL", "Blender"]
+  },
+  "Unreal Engine": {
+    "category": "Game Dev", "parent": "Software Development",
+    "synonyms": [],
+    "implies":    ["C++", "Game Development", "Blueprints"],
+    "implied_by": [],
+    "related":    ["Unity", "C++", "3D Graphics", "Blender"]
+  },
+  "Blockchain": {
+    "category": "Computer Science", "parent": "Technical Skills",
+    "synonyms": [],
+    "implies":    ["Cryptography", "Distributed Systems", "Solidity"],
+    "implied_by": ["Solidity"],
+    "related":    ["Ethereum", "Web3", "Smart Contracts", "DeFi"]
+  },
+  "Cybersecurity": {
+    "category": "Security", "parent": "Infrastructure",
+    "synonyms": [],
+    "implies":    ["Networking", "Linux", "Cryptography"],
+    "implied_by": ["Ethical Hacking", "Network Security", "Application Security"],
+    "related":    ["Ethical Hacking", "Cryptography", "OWASP", "Firewalls", "SIEM"]
+  },
+  "Ethical Hacking": {
+    "category": "Security", "parent": "Infrastructure",
+    "synonyms": ["penetration testing", "pentesting"],
+    "implies":    ["Cybersecurity", "Networking", "Linux", "Scripting"],
+    "implied_by": [],
+    "related":    ["Burp Suite", "Metasploit", "Nmap", "Wireshark", "Kali Linux"]
+  },
+  "DevOps": {
+    "category": "Methodology", "parent": "Management",
+    "synonyms": [],
+    "implies":    ["CI/CD", "Docker", "Linux", "Automation", "Monitoring"],
+    "implied_by": [],
+    "related":    ["SRE", "GitOps", "Infrastructure as Code", "Kubernetes", "Terraform"]
+  },
+  "CI/CD": {
+    "category": "DevOps", "parent": "Cloud",
+    "synonyms": [],
+    "implies":    ["Git", "Automation", "Testing"],
+    "implied_by": ["GitHub Actions", "Jenkins", "GitLab CI", "CircleCI"],
+    "related":    ["Docker", "Kubernetes", "DevOps", "ArgoCD"]
+  },
+  "Jira": {
+    "category": "Project Management", "parent": "Management",
+    "synonyms": [],
+    "implies":    ["Agile", "Issue Tracking", "Sprint Planning"],
+    "implied_by": [],
+    "related":    ["Confluence", "Trello", "Scrum", "Linear"]
+  },
+  "Agile": {
+    "category": "Methodology", "parent": "Management",
+    "synonyms": [],
+    "implies":    ["Sprint Planning", "Collaboration", "Iterative Development"],
+    "implied_by": ["Scrum", "Kanban", "SAFe"],
+    "related":    ["Scrum", "Kanban", "Jira", "Team Collaboration"]
+  },
+  "Scrum": {
+    "category": "Methodology", "parent": "Management",
+    "synonyms": [],
+    "implies":    ["Agile", "Sprint Planning", "Retrospectives"],
+    "implied_by": [],
+    "related":    ["Kanban", "Jira", "SAFe", "Team Leadership"]
+  },
+  "Data Structures": {
+    "category": "Computer Science", "parent": "Technical Skills",
+    "synonyms": [],
+    "implies":    ["Algorithms", "Programming"],
+    "implied_by": ["Competitive Programming"],
+    "related":    ["Algorithms", "Dynamic Programming", "Graph Theory", "Problem Solving"]
+  },
+  "Algorithms": {
+    "category": "Computer Science", "parent": "Technical Skills",
+    "synonyms": [],
+    "implies":    ["Data Structures", "Mathematics", "Problem Solving"],
+    "implied_by": ["Competitive Programming", "Dynamic Programming"],
+    "related":    ["Data Structures", "Dynamic Programming", "Graph Theory", "Complexity Analysis"]
+  },
+  "Competitive Programming": {
+    "category": "Computer Science", "parent": "Technical Skills",
+    "synonyms": ["cp"],
+    "implies":    ["Data Structures", "Algorithms", "C++", "Python", "Mathematics"],
+    "implied_by": [],
+    "related":    ["Dynamic Programming", "Graph Theory", "Codeforces", "LeetCode", "Problem Solving"]
+  },
+  "OOP": {
+    "category": "Computer Science", "parent": "Technical Skills",
+    "synonyms": ["object-oriented programming"],
+    "implies":    ["Design Patterns", "Abstraction", "Encapsulation"],
+    "implied_by": ["Java", "C#", "C++", "Python", "Kotlin", "Swift"],
+    "related":    ["Design Patterns", "SOLID Principles", "Clean Code"]
+  },
+  "Distributed Systems": {
+    "category": "Computer Science", "parent": "Technical Skills",
+    "synonyms": [],
+    "implies":    ["Networking", "Concurrency", "Fault Tolerance"],
+    "implied_by": ["Kafka", "Kubernetes", "Apache Spark"],
+    "related":    ["Microservices", "System Design", "CAP Theorem", "Consensus Algorithms"]
+  },
+  "Computer Networks": {
+    "category": "Computer Science", "parent": "Technical Skills",
+    "synonyms": ["networking"],
+    "implies":    ["TCP/IP", "HTTP", "DNS", "Protocols"],
+    "implied_by": ["Cybersecurity", "DevOps", "System Design"],
+    "related":    ["TCP/IP", "HTTP", "WebSockets", "Network Security", "Load Balancing"]
+  },
+  "Jupyter Notebook": {
+    "category": "Data Science", "parent": "Data",
+    "synonyms": ["jupyter", "ipynb"],
+    "implies":    ["Python", "Data Analysis"],
+    "implied_by": [],
+    "related":    ["Google Colab", "Pandas", "NumPy", "Data Science", "Machine Learning"]
+  },
+  "Power BI": {
+    "category": "Data Visualization", "parent": "Data",
+    "synonyms": [],
+    "implies":    ["DAX", "Data Modeling", "SQL"],
+    "implied_by": [],
+    "related":    ["Tableau", "Looker", "Excel", "Business Intelligence"]
+  },
+  "Tableau": {
+    "category": "Data Visualization", "parent": "Data",
+    "synonyms": [],
+    "implies":    ["Data Visualization", "Analytics"],
+    "implied_by": [],
+    "related":    ["Power BI", "Looker", "D3.js", "Business Intelligence"]
+  },
+  "Excel": {
+    "category": "Productivity", "parent": "Business",
+    "synonyms": ["microsoft excel"],
+    "implies":    ["Data Analysis", "Formulas", "Charts"],
+    "implied_by": [],
+    "related":    ["Google Sheets", "Power BI", "SQL", "Data Analysis"]
+  },
+  "Airflow": {
+    "category": "Machine Learning", "parent": "AI",
+    "synonyms": ["apache airflow"],
+    "implies":    ["Python", "DAG", "Workflow Orchestration", "ETL"],
+    "implied_by": [],
+    "related":    ["Prefect", "Luigi", "dbt", "Data Engineering"]
   },
   "dbt": {
-    "category": "Big Data",
-    "parent": "Data",
-    "synonyms": ["data build tool"]
+    "category": "Big Data", "parent": "Data",
+    "synonyms": ["data build tool"],
+    "implies":    ["SQL", "Data Transformation", "Data Warehousing"],
+    "implied_by": [],
+    "related":    ["Snowflake", "BigQuery", "Airflow", "ETL", "Analytics Engineering"]
   },
-  "ETL": {
-    "category": "Big Data",
-    "parent": "Data",
-    "synonyms": ["extract transform load"]
+  "Hugging Face": {
+    "category": "Deep Learning", "parent": "Machine Learning",
+    "synonyms": ["transformers"],
+    "implies":    ["Python", "NLP", "Deep Learning", "Transformers"],
+    "implied_by": [],
+    "related":    ["PyTorch", "TensorFlow", "LLM", "Fine-tuning", "BERT", "GPT"]
   },
-  "Data Warehousing": {
-    "category": "Big Data",
-    "parent": "Data",
-    "synonyms": []
+  "MLflow": {
+    "category": "Machine Learning", "parent": "AI",
+    "synonyms": [],
+    "implies":    ["Python", "Machine Learning", "Experiment Tracking"],
+    "implied_by": [],
+    "related":    ["Weights & Biases", "DVC", "Model Deployment", "ML Pipelines"]
   },
-  "Databricks": {
-    "category": "Big Data",
-    "parent": "Data",
-    "synonyms": []
-  },
-  "Apache Beam": {
-    "category": "Big Data",
-    "parent": "Data",
-    "synonyms": []
-  },
-  "Redshift": {
-    "category": "Big Data",
-    "parent": "Data",
-    "synonyms": ["aws redshift"]
-  },
-
-  "LaTeX": {
-    "category": "Academic",
-    "parent": "General",
-    "synonyms": []
-  },
-  "Wolfram Mathematica": {
-    "category": "Academic",
-    "parent": "General",
-    "synonyms": ["mathematica"]
-  },
-  "SPSS": {
-    "category": "Academic",
-    "parent": "General",
-    "synonyms": []
-  },
-  "SAS": {
-    "category": "Academic",
-    "parent": "General",
-    "synonyms": []
-  },
-  "Stata": {
-    "category": "Academic",
-    "parent": "General",
-    "synonyms": []
-  },
-
-  "Game Development": {
-    "category": "Game Dev",
-    "parent": "Software Development",
-    "synonyms": []
-  },
-  "Godot": {
-    "category": "Game Dev",
-    "parent": "Software Development",
-    "synonyms": []
-  },
-  "Pygame": {
-    "category": "Game Dev",
-    "parent": "Software Development",
-    "synonyms": []
-  },
-  "OpenGL": {
-    "category": "Game Dev",
-    "parent": "Software Development",
-    "synonyms": []
-  },
-  "Vulkan": {
-    "category": "Game Dev",
-    "parent": "Software Development",
-    "synonyms": []
-  },
-  "DirectX": {
-    "category": "Game Dev",
-    "parent": "Software Development",
-    "synonyms": []
-  },
-
-  "Stripe API": {
-    "category": "APIs & Integrations",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "Twilio": {
-    "category": "APIs & Integrations",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "SendGrid": {
-    "category": "APIs & Integrations",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "Mapbox": {
-    "category": "APIs & Integrations",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "Google Maps API": {
-    "category": "APIs & Integrations",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "Webhooks": {
-    "category": "APIs & Integrations",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "Zapier": {
-    "category": "APIs & Integrations",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-  "n8n": {
-    "category": "APIs & Integrations",
-    "parent": "Technical Skills",
-    "synonyms": []
-  },
-
   "Arduino": {
-    "category": "Hardware & Electronics",
-    "parent": "Technical Skills",
-    "synonyms": []
+    "category": "Hardware & Electronics", "parent": "Technical Skills",
+    "synonyms": [],
+    "implies":    ["C", "C++", "Embedded Systems", "Electronics"],
+    "implied_by": [],
+    "related":    ["Raspberry Pi", "IoT", "Embedded Systems", "Sensors"]
   },
   "Raspberry Pi": {
-    "category": "Hardware & Electronics",
-    "parent": "Technical Skills",
-    "synonyms": []
+    "category": "Hardware & Electronics", "parent": "Technical Skills",
+    "synonyms": [],
+    "implies":    ["Linux", "Python", "IoT", "Embedded Systems"],
+    "implied_by": [],
+    "related":    ["Arduino", "IoT", "Linux", "Electronics"]
   },
-  "VHDL": {
-    "category": "Hardware & Electronics",
-    "parent": "Technical Skills",
-    "synonyms": []
+  "Selenium": {
+    "category": "Testing", "parent": "Software Development",
+    "synonyms": [],
+    "implies":    ["Test Automation", "Python", "Java", "Browser Automation"],
+    "implied_by": [],
+    "related":    ["Playwright", "Cypress", "Appium", "QA"]
   },
-  "Verilog": {
-    "category": "Hardware & Electronics",
-    "parent": "Technical Skills",
-    "synonyms": []
+  "Jest": {
+    "category": "Testing", "parent": "Software Development",
+    "synonyms": [],
+    "implies":    ["JavaScript", "Unit Testing", "Test Automation"],
+    "implied_by": [],
+    "related":    ["Vitest", "Mocha", "React Testing Library", "Node.js"]
+  },
+  "Pytest": {
+    "category": "Testing", "parent": "Software Development",
+    "synonyms": [],
+    "implies":    ["Python", "Unit Testing", "Test Automation"],
+    "implied_by": [],
+    "related":    ["Unittest", "Mocking", "Coverage", "Python"]
+  },
+  "Playwright": {
+    "category": "Testing", "parent": "Software Development",
+    "synonyms": [],
+    "implies":    ["E2E Testing", "Browser Automation", "JavaScript", "Python"],
+    "implied_by": [],
+    "related":    ["Cypress", "Selenium", "Test Automation"]
+  },
+  "SEO": {
+    "category": "Marketing", "parent": "Business",
+    "synonyms": ["search engine optimization"],
+    "implies":    ["HTML", "Content Strategy", "Analytics"],
+    "implied_by": [],
+    "related":    ["Google Analytics", "Content Marketing", "Web Development", "Keyword Research"]
+  },
+  "Salesforce": {
+    "category": "Finance", "parent": "Business",
+    "synonyms": ["crm", "sfdc"],
+    "implies":    ["CRM", "Business Processes", "Apex"],
+    "implied_by": [],
+    "related":    ["HubSpot", "ERP", "Business Intelligence", "Marketing Automation"]
+  },
+  "LaTeX": {
+    "category": "Academic", "parent": "General",
+    "synonyms": [],
+    "implies":    ["Document Formatting", "Mathematical Typesetting"],
+    "implied_by": [],
+    "related":    ["Academic Writing", "Mathematics", "Technical Writing"]
+  },
+  "WebAssembly": {
+    "category": "Computer Science", "parent": "Technical Skills",
+    "synonyms": ["wasm"],
+    "implies":    ["C++", "Rust", "Low-Level Programming"],
+    "implied_by": [],
+    "related":    ["Rust", "C++", "Browser Performance", "Emscripten"]
+  },
+  "IoT": {
+    "category": "Computer Science", "parent": "Technical Skills",
+    "synonyms": ["internet of things"],
+    "implies":    ["Embedded Systems", "Networking", "Sensors", "MQTT"],
+    "implied_by": [],
+    "related":    ["Arduino", "Raspberry Pi", "MQTT", "Edge Computing"]
+  },
+  "Prometheus": {
+    "category": "DevOps", "parent": "Cloud",
+    "synonyms": [],
+    "implies":    ["Monitoring", "Metrics", "YAML"],
+    "implied_by": [],
+    "related":    ["Grafana", "Alerting", "Kubernetes", "Observability"]
+  },
+  "Grafana": {
+    "category": "DevOps", "parent": "Cloud",
+    "synonyms": [],
+    "implies":    ["Monitoring", "Dashboards", "Data Visualization"],
+    "implied_by": [],
+    "related":    ["Prometheus", "Elasticsearch", "Observability", "Datadog"]
+  },
+  "Nginx": {
+    "category": "DevOps", "parent": "Cloud",
+    "synonyms": [],
+    "implies":    ["Linux", "Web Server", "Reverse Proxy", "Load Balancing"],
+    "implied_by": [],
+    "related":    ["Apache", "Load Balancing", "SSL/TLS", "Docker"]
+  },
+  "Functional Programming": {
+    "category": "Computer Science", "parent": "Technical Skills",
+    "synonyms": [],
+    "implies":    ["Immutability", "Pure Functions", "Higher-Order Functions"],
+    "implied_by": ["Haskell", "Clojure", "Scala", "Elixir"],
+    "related":    ["Haskell", "Scala", "Clojure", "Elixir", "OOP"]
+  },
+  "Concurrency": {
+    "category": "Computer Science", "parent": "Technical Skills",
+    "synonyms": ["multithreading", "parallel programming"],
+    "implies":    ["Operating Systems", "Synchronization", "Performance"],
+    "implied_by": ["Go", "Rust", "Java"],
+    "related":    ["Distributed Systems", "Async Programming", "Race Conditions"]
+  },
+  "Communication": {
+    "category": "Soft Skills", "parent": "General",
+    "synonyms": [],
+    "implies":    [],
+    "implied_by": [],
+    "related":    ["Leadership", "Teamwork", "Public Speaking", "Technical Writing"]
+  },
+  "Leadership": {
+    "category": "Soft Skills", "parent": "General",
+    "synonyms": [],
+    "implies":    ["Communication", "Decision Making", "Mentoring"],
+    "implied_by": [],
+    "related":    ["Team Management", "Scrum Master", "Project Management"]
+  },
+  "Problem Solving": {
+    "category": "Soft Skills", "parent": "General",
+    "synonyms": [],
+    "implies":    ["Critical Thinking", "Analytical Thinking"],
+    "implied_by": ["Competitive Programming", "Algorithms"],
+    "related":    ["Algorithms", "Data Structures", "Critical Thinking"]
   },
 
-  "Regex": {
-    "category": "General Programming",
-    "parent": "Technical Skills",
-    "synonyms": ["regular expressions"]
+  "Prompt Engineering": {
+    "category": "AI", "parent": "Machine Learning",
+    "synonyms": [],
+    "implies":    ["LLM", "AI", "Communication"],
+    "implied_by": [],
+    "related":    ["LangChain", "OpenAI API", "Generative AI", "Chatbots"]
   },
-  "JSON": {
-    "category": "General Programming",
-    "parent": "Technical Skills",
-    "synonyms": []
+  "Vector Databases": {
+    "category": "AI", "parent": "Machine Learning",
+    "synonyms": ["pinecone", "weaviate", "qdrant", "chroma"],
+    "implies":    ["Embeddings", "Semantic Search", "Machine Learning"],
+    "implied_by": ["RAG"],
+    "related":    ["RAG", "LLM", "Semantic Search", "Pinecone"]
   },
-  "XML": {
-    "category": "General Programming",
-    "parent": "Technical Skills",
-    "synonyms": []
+  "OpenAI API": {
+    "category": "AI", "parent": "Machine Learning",
+    "synonyms": ["chatgpt api"],
+    "implies":    ["Python", "REST API", "LLM", "Prompt Engineering"],
+    "implied_by": [],
+    "related":    ["LangChain", "Generative AI", "Chatbots", "RAG"]
   },
-  "YAML": {
-    "category": "General Programming",
-    "parent": "Technical Skills",
-    "synonyms": []
+  "Weights & Biases": {
+    "category": "Machine Learning", "parent": "AI",
+    "synonyms": ["wandb"],
+    "implies":    ["Python", "Machine Learning", "Experiment Tracking"],
+    "implied_by": [],
+    "related":    ["MLflow", "DVC", "Deep Learning", "Model Evaluation"]
   },
-  "TOML": {
-    "category": "General Programming",
-    "parent": "Technical Skills",
-    "synonyms": []
+  "XGBoost": {
+    "category": "Machine Learning", "parent": "AI",
+    "synonyms": [],
+    "implies":    ["Python", "Machine Learning", "Supervised Learning"],
+    "implied_by": [],
+    "related":    ["LightGBM", "CatBoost", "Scikit-learn", "Feature Engineering"]
   },
-  "Protocol Buffers": {
-    "category": "General Programming",
-    "parent": "Technical Skills",
-    "synonyms": ["protobuf"]
+  "OpenCV": {
+    "category": "Deep Learning", "parent": "Machine Learning",
+    "synonyms": ["cv2"],
+    "implies":    ["Python", "Image Processing", "Computer Vision"],
+    "implied_by": [],
+    "related":    ["Computer Vision", "NumPy", "Deep Learning", "TensorFlow"]
+  },
+  "Blender": {
+    "category": "Design", "parent": "Creative",
+    "synonyms": [],
+    "implies":    ["3D Modeling", "Animation", "Rendering"],
+    "implied_by": [],
+    "related":    ["Unity", "Unreal Engine", "3D Graphics", "Motion Graphics"]
+  },
+  "Stripe": {
+    "category": "Finance", "parent": "Business",
+    "synonyms": [],
+    "implies":    ["Payment Integration", "REST API", "Security"],
+    "implied_by": [],
+    "related":    ["PayPal", "Payment Gateway", "E-commerce", "Node.js"]
+  },
+  "Swagger": {
+    "category": "Communication", "parent": "General",
+    "synonyms": ["openapi"],
+    "implies":    ["REST API", "API Documentation", "YAML", "JSON"],
+    "implied_by": ["FastAPI"],
+    "related":    ["Postman", "API Design", "REST API", "Documentation"]
+  },
+  "ETL": {
+    "category": "Big Data", "parent": "Data",
+    "synonyms": ["extract transform load"],
+    "implies":    ["SQL", "Python", "Data Pipelines", "Data Warehousing"],
+    "implied_by": [],
+    "related":    ["Airflow", "dbt", "Apache Spark", "Data Engineering"]
+  },
+  "Technical Writing": {
+    "category": "Communication", "parent": "General",
+    "synonyms": [],
+    "implies":    ["Documentation", "Communication", "Markdown"],
+    "implied_by": [],
+    "related":    ["API Documentation", "Swagger", "Notion", "Confluence"]
+  },
+  "Statistics": {
+    "category": "Mathematics", "parent": "Technical Skills",
+    "synonyms": [],
+    "implies":    ["Probability", "Data Analysis", "Mathematics"],
+    "implied_by": ["Machine Learning", "Data Science", "R"],
+    "related":    ["Machine Learning", "Data Science", "Probability", "A/B Testing"]
+  },
+  "Linear Algebra": {
+    "category": "Mathematics", "parent": "Technical Skills",
+    "synonyms": [],
+    "implies":    ["Mathematics", "Vectors", "Matrices"],
+    "implied_by": ["Machine Learning", "Deep Learning", "Computer Vision"],
+    "related":    ["Machine Learning", "Deep Learning", "NumPy", "MATLAB"]
+  },
+  "Reinforcement Learning": {
+    "category": "AI", "parent": "Machine Learning",
+    "synonyms": ["rl"],
+    "implies":    ["Machine Learning", "Python", "Mathematics"],
+    "implied_by": [],
+    "related":    ["Deep Learning", "OpenAI Gym", "Policy Gradient", "Q-Learning"]
+  },
+  "Event-Driven Architecture": {
+    "category": "Architecture", "parent": "Backend",
+    "synonyms": ["eda"],
+    "implies":    ["Messaging", "Async Programming", "Microservices"],
+    "implied_by": [],
+    "related":    ["Kafka", "RabbitMQ", "Microservices", "CQRS"]
+  },
+  "Design Patterns": {
+    "category": "Architecture", "parent": "Backend",
+    "synonyms": [],
+    "implies":    ["OOP", "Software Architecture", "Clean Code"],
+    "implied_by": [],
+    "related":    ["SOLID Principles", "Clean Architecture", "Refactoring", "OOP"]
+  },
+  "Google Analytics": {
+    "category": "Marketing", "parent": "Business",
+    "synonyms": ["ga4"],
+    "implies":    ["Analytics", "Data Analysis", "SEO"],
+    "implied_by": [],
+    "related":    ["SEO", "Digital Marketing", "A/B Testing", "Tableau"]
+  },
+  "Databricks": {
+    "category": "Big Data", "parent": "Data",
+    "synonyms": [],
+    "implies":    ["Apache Spark", "Python", "SQL", "Data Engineering"],
+    "implied_by": [],
+    "related":    ["Apache Spark", "Snowflake", "Delta Lake", "MLflow"]
+  },
+  "Serverless": {
+    "category": "Architecture", "parent": "Backend",
+    "synonyms": [],
+    "implies":    ["Cloud", "AWS Lambda", "Event-Driven Architecture"],
+    "implied_by": ["AWS Lambda"],
+    "related":    ["AWS Lambda", "Google Cloud Functions", "Azure Functions", "Microservices"]
+  },
+  "Test-Driven Development": {
+    "category": "Methodology", "parent": "Management",
+    "synonyms": ["tdd"],
+    "implies":    ["Unit Testing", "Code Quality", "Refactoring"],
+    "implied_by": [],
+    "related":    ["BDD", "Jest", "Pytest", "JUnit", "Clean Code"]
+  },
+  "Domain-Driven Design": {
+    "category": "Architecture", "parent": "Backend",
+    "synonyms": ["ddd"],
+    "implies":    ["OOP", "Software Architecture", "Bounded Contexts"],
+    "implied_by": [],
+    "related":    ["Clean Architecture", "CQRS", "Microservices", "Design Patterns"]
+  },
+  "Accessibility": {
+    "category": "Design", "parent": "Creative",
+    "synonyms": ["a11y", "wcag"],
+    "implies":    ["HTML", "CSS", "UI/UX Design"],
+    "implied_by": [],
+    "related":    ["WCAG", "Semantic HTML", "Screen Readers", "Responsive Design"]
+  },
+  "Responsive Design": {
+    "category": "Design", "parent": "Creative",
+    "synonyms": [],
+    "implies":    ["CSS", "HTML", "Media Queries"],
+    "implied_by": [],
+    "related":    ["Tailwind CSS", "Bootstrap", "Mobile Development", "Accessibility"]
+  },
+  "Kanban": {
+    "category": "Methodology", "parent": "Management",
+    "synonyms": [],
+    "implies":    ["Agile", "Workflow Management", "Continuous Delivery"],
+    "implied_by": [],
+    "related":    ["Scrum", "Trello", "Jira", "Lean"]
+  },
+  "Monitoring": {
+    "category": "DevOps", "parent": "Cloud",
+    "synonyms": ["observability"],
+    "implies":    ["Logging", "Metrics", "Alerting"],
+    "implied_by": ["Prometheus", "Grafana", "Datadog", "New Relic"],
+    "related":    ["Prometheus", "Grafana", "Datadog", "SRE", "ELK Stack"]
+  },
+  "Load Balancing": {
+    "category": "Infrastructure", "parent": "Infrastructure",
+    "synonyms": [],
+    "implies":    ["Networking", "Scalability", "High Availability"],
+    "implied_by": [],
+    "related":    ["Nginx", "HAProxy", "Kubernetes", "System Design"]
+  },
+  "Authentication": {
+    "category": "Security", "parent": "Infrastructure",
+    "synonyms": ["auth"],
+    "implies":    ["Security", "JWT", "OAuth", "Sessions"],
+    "implied_by": ["JWT", "OAuth"],
+    "related":    ["JWT", "OAuth", "SSO", "IAM", "Cryptography"]
+  },
+  "API Design": {
+    "category": "Backend", "parent": "Web Development",
+    "synonyms": [],
+    "implies":    ["REST API", "Documentation", "Versioning"],
+    "implied_by": [],
+    "related":    ["REST API", "GraphQL", "gRPC", "Swagger", "Postman"]
+  },
+  "Code Review": {
+    "category": "Methodology", "parent": "Management",
+    "synonyms": [],
+    "implies":    ["Git", "Communication", "Code Quality"],
+    "implied_by": [],
+    "related":    ["Pull Requests", "GitHub", "Clean Code", "Pair Programming"]
+  },
+  "Caching": {
+    "category": "Backend", "parent": "Web Development",
+    "synonyms": [],
+    "implies":    ["Performance Optimization", "Scalability"],
+    "implied_by": [],
+    "related":    ["Redis", "Memcached", "CDN", "System Design"]
+  },
+  "Infrastructure as Code": {
+    "category": "DevOps", "parent": "Cloud",
+    "synonyms": ["iac"],
+    "implies":    ["Cloud", "Automation", "Version Control"],
+    "implied_by": ["Terraform", "Pulumi", "Ansible"],
+    "related":    ["Terraform", "Ansible", "Pulumi", "CloudFormation"]
+  },
+  "Feature Engineering": {
+    "category": "Machine Learning", "parent": "AI",
+    "synonyms": [],
+    "implies":    ["Machine Learning", "Python", "Data Preprocessing", "Pandas"],
+    "implied_by": [],
+    "related":    ["Scikit-learn", "XGBoost", "EDA", "Data Science"]
+  },
+  "Time Series Analysis": {
+    "category": "Data Science", "parent": "Data",
+    "synonyms": [],
+    "implies":    ["Statistics", "Python", "Data Analysis"],
+    "implied_by": [],
+    "related":    ["Pandas", "Prophet", "ARIMA", "InfluxDB", "Machine Learning"]
+  },
+  "Web Scraping": {
+    "category": "Backend", "parent": "Web Development",
+    "synonyms": [],
+    "implies":    ["Python", "HTML Parsing", "HTTP"],
+    "implied_by": [],
+    "related":    ["BeautifulSoup", "Scrapy", "Selenium", "Playwright", "Python"]
+  },
+  "Message Queuing": {
+    "category": "Messaging", "parent": "Infrastructure",
+    "synonyms": [],
+    "implies":    ["Async Processing", "Distributed Systems"],
+    "implied_by": ["RabbitMQ", "Apache Kafka", "AWS SQS"],
+    "related":    ["RabbitMQ", "Kafka", "Celery", "Event-Driven Architecture"]
+  },
+  "SSR": {
+    "category": "Frontend", "parent": "Web Development",
+    "synonyms": ["server-side rendering"],
+    "implies":    ["Node.js", "SEO", "Performance"],
+    "implied_by": ["Next.js", "Nuxt.js"],
+    "related":    ["Next.js", "Nuxt.js", "SvelteKit", "SEO", "Performance"]
+  },
+  "Performance Optimization": {
+    "category": "Computer Science", "parent": "Technical Skills",
+    "synonyms": [],
+    "implies":    ["Profiling", "Caching", "Algorithm Analysis"],
+    "implied_by": [],
+    "related":    ["Caching", "Load Balancing", "Database Optimization", "Lazy Loading"]
+  },
+  "Mentoring": {
+    "category": "Soft Skills", "parent": "General",
+    "synonyms": [],
+    "implies":    ["Communication", "Leadership", "Teaching"],
+    "implied_by": [],
+    "related":    ["Leadership", "Pair Programming", "Code Review", "Team Building"]
   }
 }
