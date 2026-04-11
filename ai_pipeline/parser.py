@@ -32,6 +32,36 @@ def llm_extract_fields(resume_text: str):
         raw_text = raw_text[7:-3].strip()
     return json.loads(raw_text)
 
+def llm_extract_jd_skills(jd_text: str) -> dict:
+    prompt = f"""
+    Extract the technical and soft skills from the following job description.
+    Categorize them into 'required' and 'preferred' based on the context.
+    Return ONLY a valid JSON object matching this schema exactly:
+    {{
+        "required": ["skill1", "skill2"],
+        "preferred": ["skill3"]
+    }}
+    No markdown formatting, no explanations.
+    
+    Job Description:
+    {jd_text}
+    """
+    response = client.models.generate_content(
+        model="gemini-3.1-flash-lite-preview", 
+        contents=prompt,
+        config=types.GenerateContentConfig(
+            response_mime_type="application/json",
+        )
+    )
+    raw_text = response.text.strip()
+    if raw_text.startswith("```json"):
+        raw_text = raw_text[7:-3].strip()
+    
+    try:
+        return json.loads(raw_text)
+    except Exception:
+        return {"required": [], "preferred": []}
+
 def extract_text_from_pdf(file_input) -> str:
     text = ""
     if isinstance(file_input, bytes):

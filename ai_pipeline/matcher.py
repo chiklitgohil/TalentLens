@@ -1,29 +1,24 @@
 from sentence_transformers import SentenceTransformer
 import chromadb
 import numpy as np
+from parser import llm_extract_jd_skills
+from normalizer import NormalizationAgent
 
 model = SentenceTransformer("all-MiniLM-L6-v2")
 client = chromadb.Client()
+normalizer = NormalizationAgent()
 
 def extract_jd_requirements(job_description: str) -> dict:
-    # Simple extraction: split JD into required and preferred
-    # You can make this smarter with Gemini later if time allows
-    lines = job_description.lower().split("\n")
-    required = []
-    preferred = []
+    # Smarter extraction using Gemini LLM to parse out specific skills instead of entire lines
+    raw_reqs = llm_extract_jd_skills(job_description)
     
-    is_preferred_section = False
-    for line in lines:
-        if "preferred" in line or "nice to have" in line:
-            is_preferred_section = True
-        if "required" in line or "must have" in line:
-            is_preferred_section = False
-        
-        if len(line.strip()) > 3:
-            if is_preferred_section:
-                preferred.append(line.strip())
-            else:
-                required.append(line.strip())
+    # Normalize JD skills to perfectly match the candidate's taxonomy
+    req_norm = normalizer.normalize_skills(raw_reqs.get("required", []))
+    pref_norm = normalizer.normalize_skills(raw_reqs.get("preferred", []))
+    
+    # Combine canonical taxonomy skills with any emerging/unknown skills
+    required = [s["skill"] for s in req_norm["normalized_skills"]] + req_norm["emerging_skills"]
+    preferred = [s["skill"] for s in pref_norm["normalized_skills"]] + pref_norm["emerging_skills"]
     
     return {"required": required, "preferred": preferred}
 
@@ -50,19 +45,21 @@ def compute_match(parsed: dict, job_description: str) -> dict:
     candidate_skill_names = [s.lower() for s in candidate_skills]
     
     gaps = []
-    for req in jd_requirements["required"]:
-        found = any(skill in req or req in skill 
+    for req in jd_requirements.get("required", []):
+        req_lower = req.lower()
+        found = any(skill in req_lower or req_lower in skill 
                    for skill in candidate_skill_names)
-        if not found and len(req) > 3:
+        if not found and len(req) > 1:
             gaps.append({
                 "skill": req,
                 "importance": "required"
             })
     
-    for pref in jd_requirements["preferred"]:
-        found = any(skill in pref or pref in skill 
+    for pref in jd_requirements.get("preferred", []):
+        pref_lower = pref.lower()
+        found = any(skill in pref_lower or pref_lower in skill 
                    for skill in candidate_skill_names)
-        if not found and len(pref) > 3:
+        if not found and len(pref) > 1:
             gaps.append({
                 "skill": pref,
                 "importance": "preferred"
