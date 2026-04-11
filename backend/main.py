@@ -1,9 +1,6 @@
 from fastapi import FastAPI, UploadFile, File, Form
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
-import fitz  # PyMuPDF
-import docx
-import io
 import sys
 import os
 

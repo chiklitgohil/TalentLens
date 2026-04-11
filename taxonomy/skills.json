@@ -19,6 +19,11 @@
     "parent": "Technical Skills",
     "synonyms": []
   },
+  "C#": {
+    "category": "Programming Languages",
+    "parent": "Technical Skills",
+    "synonyms": ["csharp"]
+  },
   "JavaScript": {
     "category": "Programming Languages",
     "parent": "Technical Skills",
@@ -74,6 +79,81 @@
     "parent": "Technical Skills",
     "synonyms": []
   },
+  "Scala": {
+    "category": "Programming Languages",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "Perl": {
+    "category": "Programming Languages",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "Haskell": {
+    "category": "Programming Languages",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "Elixir": {
+    "category": "Programming Languages",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "Clojure": {
+    "category": "Programming Languages",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "Lua": {
+    "category": "Programming Languages",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "Julia": {
+    "category": "Programming Languages",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "Groovy": {
+    "category": "Programming Languages",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "Assembly": {
+    "category": "Programming Languages",
+    "parent": "Technical Skills",
+    "synonyms": ["asm"]
+  },
+  "COBOL": {
+    "category": "Programming Languages",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "Fortran": {
+    "category": "Programming Languages",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "Bash": {
+    "category": "Programming Languages",
+    "parent": "Technical Skills",
+    "synonyms": ["shell scripting", "sh"]
+  },
+  "PowerShell": {
+    "category": "Programming Languages",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "Solidity": {
+    "category": "Programming Languages",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "Objective-C": {
+    "category": "Programming Languages",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
 
   "HTML": {
     "category": "Frontend",
@@ -105,6 +185,21 @@
     "parent": "Web Development",
     "synonyms": []
   },
+  "Nuxt.js": {
+    "category": "Frontend",
+    "parent": "Web Development",
+    "synonyms": ["nuxt"]
+  },
+  "Svelte": {
+    "category": "Frontend",
+    "parent": "Web Development",
+    "synonyms": []
+  },
+  "SvelteKit": {
+    "category": "Frontend",
+    "parent": "Web Development",
+    "synonyms": []
+  },
   "Tailwind CSS": {
     "category": "Frontend",
     "parent": "Web Development",
@@ -114,6 +209,81 @@
     "category": "Frontend",
     "parent": "Web Development",
     "synonyms": []
+  },
+  "Material UI": {
+    "category": "Frontend",
+    "parent": "Web Development",
+    "synonyms": ["mui"]
+  },
+  "Chakra UI": {
+    "category": "Frontend",
+    "parent": "Web Development",
+    "synonyms": []
+  },
+  "Shadcn UI": {
+    "category": "Frontend",
+    "parent": "Web Development",
+    "synonyms": ["shadcn"]
+  },
+  "jQuery": {
+    "category": "Frontend",
+    "parent": "Web Development",
+    "synonyms": []
+  },
+  "Redux": {
+    "category": "Frontend",
+    "parent": "Web Development",
+    "synonyms": []
+  },
+  "Zustand": {
+    "category": "Frontend",
+    "parent": "Web Development",
+    "synonyms": []
+  },
+  "Webpack": {
+    "category": "Frontend",
+    "parent": "Web Development",
+    "synonyms": []
+  },
+  "Vite": {
+    "category": "Frontend",
+    "parent": "Web Development",
+    "synonyms": []
+  },
+  "Babel": {
+    "category": "Frontend",
+    "parent": "Web Development",
+    "synonyms": []
+  },
+  "Sass": {
+    "category": "Frontend",
+    "parent": "Web Development",
+    "synonyms": ["scss"]
+  },
+  "Less": {
+    "category": "Frontend",
+    "parent": "Web Development",
+    "synonyms": []
+  },
+  "Storybook": {
+    "category": "Frontend",
+    "parent": "Web Development",
+    "synonyms": []
+  },
+  "Three.js": {
+    "category": "Frontend",
+    "parent": "Web Development",
+    "synonyms": []
+  },
+  "WebGL": {
+    "category": "Frontend",
+    "parent": "Web Development",
+    "synonyms": []
+  },
+  "PWA": {
+    "category": "Frontend",
+    "parent": "Web Development",
+    "synonyms": ["progressive web apps"]
   },
 
   "Node.js": {
@@ -151,8 +321,82 @@
     "parent": "Web Development",
     "synonyms": []
   },
+  "NestJS": {
+    "category": "Backend",
+    "parent": "Web Development",
+    "synonyms": []
+  },
+  "Laravel": {
+    "category": "Backend",
+    "parent": "Web Development",
+    "synonyms": []
+  },
+  "Ruby on Rails": {
+    "category": "Backend",
+    "parent": "Web Development",
+    "synonyms": ["rails", "ror"]
+  },
+  "Gin": {
+    "category": "Backend",
+    "parent": "Web Development",
+    "synonyms": []
+  },
+  "Fiber": {
+    "category": "Backend",
+    "parent": "Web Development",
+    "synonyms": []
+  },
+  "Hono": {
+    "category": "Backend",
+    "parent": "Web Development",
+    "synonyms": []
+  },
+  "REST API": {
+    "category": "Backend",
+    "parent": "Web Development",
+    "synonyms": ["rest"]
+  },
+  "GraphQL": {
+    "category": "Backend",
+    "parent": "Web Development",
+    "synonyms": []
+  },
+  "gRPC": {
+    "category": "Backend",
+    "parent": "Web Development",
+    "synonyms": []
+  },
+  "WebSockets": {
+    "category": "Backend",
+    "parent": "Web Development",
+    "synonyms": []
+  },
+  "OAuth": {
+    "category": "Backend",
+    "parent": "Web Development",
+    "synonyms": ["oauth2"]
+  },
+  "JWT": {
+    "category": "Backend",
+    "parent": "Web Development",
+    "synonyms": ["json web token"]
+  },
+  "Celery": {
+    "category": "Backend",
+    "parent": "Web Development",
+    "synonyms": []
+  },
 
-  "MySQL": { "category": "Database", "parent": "Data", "synonyms": [] },
+  "SQL": {
+    "category": "Database",
+    "parent": "Data",
+    "synonyms": ["structured query language"]
+  },
+  "MySQL": {
+    "category": "Database",
+    "parent": "Data",
+    "synonyms": []
+  },
   "PostgreSQL": {
     "category": "Database",
     "parent": "Data",
@@ -163,32 +407,308 @@
     "parent": "Data",
     "synonyms": ["mongo"]
   },
-  "Redis": { "category": "Database", "parent": "Data", "synonyms": [] },
-  "SQLite": { "category": "Database", "parent": "Data", "synonyms": [] },
-  "Oracle": { "category": "Database", "parent": "Data", "synonyms": [] },
+  "Redis": {
+    "category": "Database",
+    "parent": "Data",
+    "synonyms": []
+  },
+  "SQLite": {
+    "category": "Database",
+    "parent": "Data",
+    "synonyms": []
+  },
+  "Oracle": {
+    "category": "Database",
+    "parent": "Data",
+    "synonyms": []
+  },
+  "Microsoft SQL Server": {
+    "category": "Database",
+    "parent": "Data",
+    "synonyms": ["mssql", "sql server"]
+  },
+  "Cassandra": {
+    "category": "Database",
+    "parent": "Data",
+    "synonyms": []
+  },
+  "DynamoDB": {
+    "category": "Database",
+    "parent": "Data",
+    "synonyms": []
+  },
+  "Firebase": {
+    "category": "Database",
+    "parent": "Data",
+    "synonyms": []
+  },
+  "Firestore": {
+    "category": "Database",
+    "parent": "Data",
+    "synonyms": []
+  },
+  "Elasticsearch": {
+    "category": "Database",
+    "parent": "Data",
+    "synonyms": []
+  },
+  "Neo4j": {
+    "category": "Database",
+    "parent": "Data",
+    "synonyms": []
+  },
+  "CouchDB": {
+    "category": "Database",
+    "parent": "Data",
+    "synonyms": []
+  },
+  "InfluxDB": {
+    "category": "Database",
+    "parent": "Data",
+    "synonyms": []
+  },
+  "Supabase": {
+    "category": "Database",
+    "parent": "Data",
+    "synonyms": []
+  },
+  "PlanetScale": {
+    "category": "Database",
+    "parent": "Data",
+    "synonyms": []
+  },
+  "Prisma": {
+    "category": "Database",
+    "parent": "Data",
+    "synonyms": []
+  },
+  "SQLAlchemy": {
+    "category": "Database",
+    "parent": "Data",
+    "synonyms": []
+  },
+  "Hibernate": {
+    "category": "Database",
+    "parent": "Data",
+    "synonyms": []
+  },
 
-  "Docker": { "category": "DevOps", "parent": "Cloud", "synonyms": [] },
+  "Git": {
+    "category": "Version Control",
+    "parent": "DevOps",
+    "synonyms": []
+  },
+  "GitHub": {
+    "category": "Version Control",
+    "parent": "DevOps",
+    "synonyms": []
+  },
+  "GitLab": {
+    "category": "Version Control",
+    "parent": "DevOps",
+    "synonyms": []
+  },
+  "Bitbucket": {
+    "category": "Version Control",
+    "parent": "DevOps",
+    "synonyms": []
+  },
+  "SVN": {
+    "category": "Version Control",
+    "parent": "DevOps",
+    "synonyms": ["subversion"]
+  },
+
+  "Docker": {
+    "category": "DevOps",
+    "parent": "Cloud",
+    "synonyms": []
+  },
   "Kubernetes": {
     "category": "DevOps",
     "parent": "Cloud",
     "synonyms": ["k8s"]
   },
-  "Jenkins": { "category": "DevOps", "parent": "Cloud", "synonyms": [] },
-  "Git": { "category": "DevOps", "parent": "Cloud", "synonyms": [] },
-  "GitHub": { "category": "DevOps", "parent": "Cloud", "synonyms": [] },
-  "GitLab": { "category": "DevOps", "parent": "Cloud", "synonyms": [] },
-  "CI/CD": { "category": "DevOps", "parent": "Cloud", "synonyms": [] },
+  "Jenkins": {
+    "category": "DevOps",
+    "parent": "Cloud",
+    "synonyms": []
+  },
+  "CI/CD": {
+    "category": "DevOps",
+    "parent": "Cloud",
+    "synonyms": []
+  },
+  "GitHub Actions": {
+    "category": "DevOps",
+    "parent": "Cloud",
+    "synonyms": []
+  },
+  "GitLab CI": {
+    "category": "DevOps",
+    "parent": "Cloud",
+    "synonyms": []
+  },
+  "CircleCI": {
+    "category": "DevOps",
+    "parent": "Cloud",
+    "synonyms": []
+  },
+  "Travis CI": {
+    "category": "DevOps",
+    "parent": "Cloud",
+    "synonyms": []
+  },
+  "Ansible": {
+    "category": "DevOps",
+    "parent": "Cloud",
+    "synonyms": []
+  },
+  "Terraform": {
+    "category": "DevOps",
+    "parent": "Cloud",
+    "synonyms": []
+  },
+  "Pulumi": {
+    "category": "DevOps",
+    "parent": "Cloud",
+    "synonyms": []
+  },
+  "Helm": {
+    "category": "DevOps",
+    "parent": "Cloud",
+    "synonyms": []
+  },
+  "ArgoCD": {
+    "category": "DevOps",
+    "parent": "Cloud",
+    "synonyms": []
+  },
+  "Prometheus": {
+    "category": "DevOps",
+    "parent": "Cloud",
+    "synonyms": []
+  },
+  "Grafana": {
+    "category": "DevOps",
+    "parent": "Cloud",
+    "synonyms": []
+  },
+  "Nginx": {
+    "category": "DevOps",
+    "parent": "Cloud",
+    "synonyms": []
+  },
+  "Apache": {
+    "category": "DevOps",
+    "parent": "Cloud",
+    "synonyms": []
+  },
+  "Vagrant": {
+    "category": "DevOps",
+    "parent": "Cloud",
+    "synonyms": []
+  },
+  "Chef": {
+    "category": "DevOps",
+    "parent": "Cloud",
+    "synonyms": []
+  },
+  "Puppet": {
+    "category": "DevOps",
+    "parent": "Cloud",
+    "synonyms": []
+  },
+  "New Relic": {
+    "category": "DevOps",
+    "parent": "Cloud",
+    "synonyms": []
+  },
+  "Datadog": {
+    "category": "DevOps",
+    "parent": "Cloud",
+    "synonyms": []
+  },
+  "Splunk": {
+    "category": "DevOps",
+    "parent": "Cloud",
+    "synonyms": []
+  },
 
   "AWS": {
     "category": "Cloud",
     "parent": "Infrastructure",
     "synonyms": ["amazon web services"]
   },
-  "Azure": { "category": "Cloud", "parent": "Infrastructure", "synonyms": [] },
+  "Azure": {
+    "category": "Cloud",
+    "parent": "Infrastructure",
+    "synonyms": ["microsoft azure"]
+  },
   "Google Cloud": {
     "category": "Cloud",
     "parent": "Infrastructure",
-    "synonyms": ["gcp"]
+    "synonyms": ["gcp", "google cloud platform"]
+  },
+  "Heroku": {
+    "category": "Cloud",
+    "parent": "Infrastructure",
+    "synonyms": []
+  },
+  "Vercel": {
+    "category": "Cloud",
+    "parent": "Infrastructure",
+    "synonyms": []
+  },
+  "Netlify": {
+    "category": "Cloud",
+    "parent": "Infrastructure",
+    "synonyms": []
+  },
+  "DigitalOcean": {
+    "category": "Cloud",
+    "parent": "Infrastructure",
+    "synonyms": []
+  },
+  "Cloudflare": {
+    "category": "Cloud",
+    "parent": "Infrastructure",
+    "synonyms": []
+  },
+  "Render": {
+    "category": "Cloud",
+    "parent": "Infrastructure",
+    "synonyms": []
+  },
+  "Railway": {
+    "category": "Cloud",
+    "parent": "Infrastructure",
+    "synonyms": []
+  },
+  "Linode": {
+    "category": "Cloud",
+    "parent": "Infrastructure",
+    "synonyms": ["akamai cloud"]
+  },
+  "AWS Lambda": {
+    "category": "Cloud",
+    "parent": "Infrastructure",
+    "synonyms": ["serverless"]
+  },
+  "AWS S3": {
+    "category": "Cloud",
+    "parent": "Infrastructure",
+    "synonyms": []
+  },
+  "AWS EC2": {
+    "category": "Cloud",
+    "parent": "Infrastructure",
+    "synonyms": []
+  },
+  "AWS RDS": {
+    "category": "Cloud",
+    "parent": "Infrastructure",
+    "synonyms": []
   },
 
   "TensorFlow": {
@@ -206,16 +726,76 @@
     "parent": "Machine Learning",
     "synonyms": []
   },
+  "JAX": {
+    "category": "Deep Learning",
+    "parent": "Machine Learning",
+    "synonyms": []
+  },
+  "Hugging Face": {
+    "category": "Deep Learning",
+    "parent": "Machine Learning",
+    "synonyms": ["transformers"]
+  },
+  "OpenCV": {
+    "category": "Deep Learning",
+    "parent": "Machine Learning",
+    "synonyms": ["cv2"]
+  },
+  "ONNX": {
+    "category": "Deep Learning",
+    "parent": "Machine Learning",
+    "synonyms": []
+  },
+
   "Scikit-learn": {
     "category": "Machine Learning",
     "parent": "AI",
     "synonyms": ["sklearn"]
   },
-  "XGBoost": { "category": "Machine Learning", "parent": "AI", "synonyms": [] },
+  "XGBoost": {
+    "category": "Machine Learning",
+    "parent": "AI",
+    "synonyms": []
+  },
   "LightGBM": {
     "category": "Machine Learning",
     "parent": "AI",
     "synonyms": []
+  },
+  "CatBoost": {
+    "category": "Machine Learning",
+    "parent": "AI",
+    "synonyms": []
+  },
+  "MLflow": {
+    "category": "Machine Learning",
+    "parent": "AI",
+    "synonyms": []
+  },
+  "Weights & Biases": {
+    "category": "Machine Learning",
+    "parent": "AI",
+    "synonyms": ["wandb"]
+  },
+  "DVC": {
+    "category": "Machine Learning",
+    "parent": "AI",
+    "synonyms": ["data version control"]
+  },
+  "Kubeflow": {
+    "category": "Machine Learning",
+    "parent": "AI",
+    "synonyms": []
+  },
+  "Apache Spark": {
+    "category": "Machine Learning",
+    "parent": "AI",
+    "synonyms": ["spark", "pyspark"]
+  },
+  "Airflow": {
+    "category": "Machine Learning",
+    "parent": "AI",
+    "synonyms": ["apache airflow"]
   },
 
   "NLP": {
@@ -233,15 +813,103 @@
     "parent": "Machine Learning",
     "synonyms": []
   },
+  "Reinforcement Learning": {
+    "category": "AI",
+    "parent": "Machine Learning",
+    "synonyms": ["rl"]
+  },
+  "Generative AI": {
+    "category": "AI",
+    "parent": "Machine Learning",
+    "synonyms": ["genai"]
+  },
+  "LLM": {
+    "category": "AI",
+    "parent": "Machine Learning",
+    "synonyms": ["large language models"]
+  },
+  "Prompt Engineering": {
+    "category": "AI",
+    "parent": "Machine Learning",
+    "synonyms": []
+  },
+  "LangChain": {
+    "category": "AI",
+    "parent": "Machine Learning",
+    "synonyms": []
+  },
+  "LlamaIndex": {
+    "category": "AI",
+    "parent": "Machine Learning",
+    "synonyms": []
+  },
+  "RAG": {
+    "category": "AI",
+    "parent": "Machine Learning",
+    "synonyms": ["retrieval augmented generation"]
+  },
+  "Fine-tuning": {
+    "category": "AI",
+    "parent": "Machine Learning",
+    "synonyms": []
+  },
+  "Vector Databases": {
+    "category": "AI",
+    "parent": "Machine Learning",
+    "synonyms": ["pinecone", "weaviate", "qdrant", "chroma"]
+  },
+  "OpenAI API": {
+    "category": "AI",
+    "parent": "Machine Learning",
+    "synonyms": ["chatgpt api"]
+  },
 
-  "Pandas": { "category": "Data Science", "parent": "Data", "synonyms": [] },
-  "NumPy": { "category": "Data Science", "parent": "Data", "synonyms": [] },
+  "Pandas": {
+    "category": "Data Science",
+    "parent": "Data",
+    "synonyms": []
+  },
+  "NumPy": {
+    "category": "Data Science",
+    "parent": "Data",
+    "synonyms": []
+  },
   "Matplotlib": {
     "category": "Data Science",
     "parent": "Data",
     "synonyms": []
   },
-  "Seaborn": { "category": "Data Science", "parent": "Data", "synonyms": [] },
+  "Seaborn": {
+    "category": "Data Science",
+    "parent": "Data",
+    "synonyms": []
+  },
+  "Plotly": {
+    "category": "Data Science",
+    "parent": "Data",
+    "synonyms": []
+  },
+  "SciPy": {
+    "category": "Data Science",
+    "parent": "Data",
+    "synonyms": []
+  },
+  "Statsmodels": {
+    "category": "Data Science",
+    "parent": "Data",
+    "synonyms": []
+  },
+  "Jupyter Notebook": {
+    "category": "Data Science",
+    "parent": "Data",
+    "synonyms": ["jupyter", "ipynb"]
+  },
+  "Google Colab": {
+    "category": "Data Science",
+    "parent": "Data",
+    "synonyms": ["colab"]
+  },
+
   "Power BI": {
     "category": "Data Visualization",
     "parent": "Data",
@@ -252,7 +920,77 @@
     "parent": "Data",
     "synonyms": []
   },
-  "Excel": { "category": "Data", "parent": "Business", "synonyms": [] },
+  "Looker": {
+    "category": "Data Visualization",
+    "parent": "Data",
+    "synonyms": []
+  },
+  "D3.js": {
+    "category": "Data Visualization",
+    "parent": "Data",
+    "synonyms": ["d3"]
+  },
+  "Metabase": {
+    "category": "Data Visualization",
+    "parent": "Data",
+    "synonyms": []
+  },
+  "Google Data Studio": {
+    "category": "Data Visualization",
+    "parent": "Data",
+    "synonyms": ["looker studio"]
+  },
+
+  "Excel": {
+    "category": "Productivity",
+    "parent": "Business",
+    "synonyms": ["microsoft excel"]
+  },
+  "Google Sheets": {
+    "category": "Productivity",
+    "parent": "Business",
+    "synonyms": []
+  },
+  "Microsoft Office": {
+    "category": "Productivity",
+    "parent": "Business",
+    "synonyms": ["ms office"]
+  },
+  "Google Workspace": {
+    "category": "Productivity",
+    "parent": "Business",
+    "synonyms": ["gsuite"]
+  },
+  "Word": {
+    "category": "Productivity",
+    "parent": "Business",
+    "synonyms": ["microsoft word"]
+  },
+  "PowerPoint": {
+    "category": "Productivity",
+    "parent": "Business",
+    "synonyms": ["ms powerpoint"]
+  },
+  "Notion": {
+    "category": "Productivity",
+    "parent": "Business",
+    "synonyms": []
+  },
+  "Confluence": {
+    "category": "Productivity",
+    "parent": "Business",
+    "synonyms": []
+  },
+  "Airtable": {
+    "category": "Productivity",
+    "parent": "Business",
+    "synonyms": []
+  },
+  "Obsidian": {
+    "category": "Productivity",
+    "parent": "Business",
+    "synonyms": []
+  },
 
   "Linux": {
     "category": "Operating Systems",
@@ -264,15 +1002,211 @@
     "parent": "Infrastructure",
     "synonyms": []
   },
-
-  "REST API": {
-    "category": "Backend",
-    "parent": "Web Development",
-    "synonyms": ["rest"]
+  "Ubuntu": {
+    "category": "Operating Systems",
+    "parent": "Infrastructure",
+    "synonyms": []
   },
-  "GraphQL": {
-    "category": "Backend",
-    "parent": "Web Development",
+  "Windows": {
+    "category": "Operating Systems",
+    "parent": "Infrastructure",
+    "synonyms": ["windows server"]
+  },
+  "macOS": {
+    "category": "Operating Systems",
+    "parent": "Infrastructure",
+    "synonyms": []
+  },
+  "CentOS": {
+    "category": "Operating Systems",
+    "parent": "Infrastructure",
+    "synonyms": []
+  },
+  "Debian": {
+    "category": "Operating Systems",
+    "parent": "Infrastructure",
+    "synonyms": []
+  },
+
+  "VS Code": {
+    "category": "Developer Tools",
+    "parent": "Technical Skills",
+    "synonyms": ["visual studio code", "vscode"]
+  },
+  "Visual Studio": {
+    "category": "Developer Tools",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "IntelliJ IDEA": {
+    "category": "Developer Tools",
+    "parent": "Technical Skills",
+    "synonyms": ["intellij"]
+  },
+  "PyCharm": {
+    "category": "Developer Tools",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "Eclipse": {
+    "category": "Developer Tools",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "Vim": {
+    "category": "Developer Tools",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "Neovim": {
+    "category": "Developer Tools",
+    "parent": "Technical Skills",
+    "synonyms": ["nvim"]
+  },
+  "Emacs": {
+    "category": "Developer Tools",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "Sublime Text": {
+    "category": "Developer Tools",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "Xcode": {
+    "category": "Developer Tools",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "Android Studio": {
+    "category": "Developer Tools",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "Postman": {
+    "category": "Developer Tools",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "Insomnia": {
+    "category": "Developer Tools",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "DBeaver": {
+    "category": "Developer Tools",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "TablePlus": {
+    "category": "Developer Tools",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "Terminal": {
+    "category": "Developer Tools",
+    "parent": "Technical Skills",
+    "synonyms": ["command line", "cli"]
+  },
+  "npm": {
+    "category": "Developer Tools",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "yarn": {
+    "category": "Developer Tools",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "pnpm": {
+    "category": "Developer Tools",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "pip": {
+    "category": "Developer Tools",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "Maven": {
+    "category": "Developer Tools",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "Gradle": {
+    "category": "Developer Tools",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "Make": {
+    "category": "Developer Tools",
+    "parent": "Technical Skills",
+    "synonyms": ["makefile"]
+  },
+  "Cursor": {
+    "category": "Developer Tools",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+
+  "Jest": {
+    "category": "Testing",
+    "parent": "Software Development",
+    "synonyms": []
+  },
+  "Pytest": {
+    "category": "Testing",
+    "parent": "Software Development",
+    "synonyms": []
+  },
+  "JUnit": {
+    "category": "Testing",
+    "parent": "Software Development",
+    "synonyms": []
+  },
+  "Selenium": {
+    "category": "Testing",
+    "parent": "Software Development",
+    "synonyms": []
+  },
+  "Playwright": {
+    "category": "Testing",
+    "parent": "Software Development",
+    "synonyms": []
+  },
+  "Cypress": {
+    "category": "Testing",
+    "parent": "Software Development",
+    "synonyms": []
+  },
+  "Vitest": {
+    "category": "Testing",
+    "parent": "Software Development",
+    "synonyms": []
+  },
+  "Mocha": {
+    "category": "Testing",
+    "parent": "Software Development",
+    "synonyms": []
+  },
+  "Chai": {
+    "category": "Testing",
+    "parent": "Software Development",
+    "synonyms": []
+  },
+  "Testing Library": {
+    "category": "Testing",
+    "parent": "Software Development",
+    "synonyms": ["react testing library"]
+  },
+  "Appium": {
+    "category": "Testing",
+    "parent": "Software Development",
+    "synonyms": []
+  },
+  "k6": {
+    "category": "Testing",
+    "parent": "Software Development",
     "synonyms": []
   },
 
@@ -285,6 +1219,72 @@
     "category": "Architecture",
     "parent": "Backend",
     "synonyms": []
+  },
+  "Event-Driven Architecture": {
+    "category": "Architecture",
+    "parent": "Backend",
+    "synonyms": ["eda"]
+  },
+  "Serverless": {
+    "category": "Architecture",
+    "parent": "Backend",
+    "synonyms": []
+  },
+  "Domain-Driven Design": {
+    "category": "Architecture",
+    "parent": "Backend",
+    "synonyms": ["ddd"]
+  },
+  "CQRS": {
+    "category": "Architecture",
+    "parent": "Backend",
+    "synonyms": []
+  },
+  "Clean Architecture": {
+    "category": "Architecture",
+    "parent": "Backend",
+    "synonyms": []
+  },
+  "Design Patterns": {
+    "category": "Architecture",
+    "parent": "Backend",
+    "synonyms": []
+  },
+  "Monorepo": {
+    "category": "Architecture",
+    "parent": "Backend",
+    "synonyms": []
+  },
+
+  "Apache Kafka": {
+    "category": "Messaging",
+    "parent": "Infrastructure",
+    "synonyms": ["kafka"]
+  },
+  "RabbitMQ": {
+    "category": "Messaging",
+    "parent": "Infrastructure",
+    "synonyms": []
+  },
+  "MQTT": {
+    "category": "Messaging",
+    "parent": "Infrastructure",
+    "synonyms": []
+  },
+  "Apache ActiveMQ": {
+    "category": "Messaging",
+    "parent": "Infrastructure",
+    "synonyms": []
+  },
+  "AWS SQS": {
+    "category": "Messaging",
+    "parent": "Infrastructure",
+    "synonyms": []
+  },
+  "Pub/Sub": {
+    "category": "Messaging",
+    "parent": "Infrastructure",
+    "synonyms": ["google pub/sub"]
   },
 
   "Android": {
@@ -307,6 +1307,21 @@
     "parent": "Software Development",
     "synonyms": []
   },
+  "Expo": {
+    "category": "Mobile Development",
+    "parent": "Software Development",
+    "synonyms": []
+  },
+  "Ionic": {
+    "category": "Mobile Development",
+    "parent": "Software Development",
+    "synonyms": []
+  },
+  "Capacitor": {
+    "category": "Mobile Development",
+    "parent": "Software Development",
+    "synonyms": []
+  },
 
   "Cybersecurity": {
     "category": "Security",
@@ -316,6 +1331,314 @@
   "Ethical Hacking": {
     "category": "Security",
     "parent": "Infrastructure",
+    "synonyms": ["penetration testing", "pentesting"]
+  },
+  "Network Security": {
+    "category": "Security",
+    "parent": "Infrastructure",
+    "synonyms": []
+  },
+  "Application Security": {
+    "category": "Security",
+    "parent": "Infrastructure",
+    "synonyms": ["appsec"]
+  },
+  "OWASP": {
+    "category": "Security",
+    "parent": "Infrastructure",
+    "synonyms": []
+  },
+  "Cryptography": {
+    "category": "Security",
+    "parent": "Infrastructure",
+    "synonyms": []
+  },
+  "SSL/TLS": {
+    "category": "Security",
+    "parent": "Infrastructure",
+    "synonyms": ["https"]
+  },
+  "Firewalls": {
+    "category": "Security",
+    "parent": "Infrastructure",
+    "synonyms": []
+  },
+  "SIEM": {
+    "category": "Security",
+    "parent": "Infrastructure",
+    "synonyms": []
+  },
+  "Burp Suite": {
+    "category": "Security",
+    "parent": "Infrastructure",
+    "synonyms": []
+  },
+  "Metasploit": {
+    "category": "Security",
+    "parent": "Infrastructure",
+    "synonyms": []
+  },
+  "Nmap": {
+    "category": "Security",
+    "parent": "Infrastructure",
+    "synonyms": []
+  },
+  "Wireshark": {
+    "category": "Security",
+    "parent": "Infrastructure",
+    "synonyms": []
+  },
+  "Kali Linux": {
+    "category": "Security",
+    "parent": "Infrastructure",
+    "synonyms": []
+  },
+  "Zero Trust": {
+    "category": "Security",
+    "parent": "Infrastructure",
+    "synonyms": []
+  },
+  "IAM": {
+    "category": "Security",
+    "parent": "Infrastructure",
+    "synonyms": ["identity and access management"]
+  },
+
+  "Data Structures": {
+    "category": "Computer Science",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "Algorithms": {
+    "category": "Computer Science",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "Competitive Programming": {
+    "category": "Computer Science",
+    "parent": "Technical Skills",
+    "synonyms": ["cp"]
+  },
+  "Dynamic Programming": {
+    "category": "Computer Science",
+    "parent": "Technical Skills",
+    "synonyms": ["dp"]
+  },
+  "Graph Theory": {
+    "category": "Computer Science",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "Operating Systems": {
+    "category": "Computer Science",
+    "parent": "Technical Skills",
+    "synonyms": ["os"]
+  },
+  "Computer Networks": {
+    "category": "Computer Science",
+    "parent": "Technical Skills",
+    "synonyms": ["networking"]
+  },
+  "Distributed Systems": {
+    "category": "Computer Science",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "Object-Oriented Programming": {
+    "category": "Computer Science",
+    "parent": "Technical Skills",
+    "synonyms": ["oop"]
+  },
+  "Functional Programming": {
+    "category": "Computer Science",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "Concurrency": {
+    "category": "Computer Science",
+    "parent": "Technical Skills",
+    "synonyms": ["multithreading", "parallel programming"]
+  },
+  "Compiler Design": {
+    "category": "Computer Science",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "Blockchain": {
+    "category": "Computer Science",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "WebAssembly": {
+    "category": "Computer Science",
+    "parent": "Technical Skills",
+    "synonyms": ["wasm"]
+  },
+  "Embedded Systems": {
+    "category": "Computer Science",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "IoT": {
+    "category": "Computer Science",
+    "parent": "Technical Skills",
+    "synonyms": ["internet of things"]
+  },
+  "FPGA": {
+    "category": "Computer Science",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+
+  "Figma": {
+    "category": "Design",
+    "parent": "Creative",
+    "synonyms": []
+  },
+  "Adobe XD": {
+    "category": "Design",
+    "parent": "Creative",
+    "synonyms": []
+  },
+  "Sketch": {
+    "category": "Design",
+    "parent": "Creative",
+    "synonyms": []
+  },
+  "Adobe Photoshop": {
+    "category": "Design",
+    "parent": "Creative",
+    "synonyms": ["photoshop"]
+  },
+  "Adobe Illustrator": {
+    "category": "Design",
+    "parent": "Creative",
+    "synonyms": ["illustrator"]
+  },
+  "Adobe Premiere Pro": {
+    "category": "Design",
+    "parent": "Creative",
+    "synonyms": ["premiere pro"]
+  },
+  "After Effects": {
+    "category": "Design",
+    "parent": "Creative",
+    "synonyms": []
+  },
+  "Canva": {
+    "category": "Design",
+    "parent": "Creative",
+    "synonyms": []
+  },
+  "InVision": {
+    "category": "Design",
+    "parent": "Creative",
+    "synonyms": []
+  },
+  "Zeplin": {
+    "category": "Design",
+    "parent": "Creative",
+    "synonyms": []
+  },
+  "UI/UX Design": {
+    "category": "Design",
+    "parent": "Creative",
+    "synonyms": ["ui design", "ux design"]
+  },
+  "Wireframing": {
+    "category": "Design",
+    "parent": "Creative",
+    "synonyms": []
+  },
+  "Prototyping": {
+    "category": "Design",
+    "parent": "Creative",
+    "synonyms": []
+  },
+  "User Research": {
+    "category": "Design",
+    "parent": "Creative",
+    "synonyms": []
+  },
+  "Design Systems": {
+    "category": "Design",
+    "parent": "Creative",
+    "synonyms": []
+  },
+  "Accessibility": {
+    "category": "Design",
+    "parent": "Creative",
+    "synonyms": ["a11y", "wcag"]
+  },
+  "Responsive Design": {
+    "category": "Design",
+    "parent": "Creative",
+    "synonyms": []
+  },
+  "Blender": {
+    "category": "Design",
+    "parent": "Creative",
+    "synonyms": []
+  },
+  "Unity": {
+    "category": "Design",
+    "parent": "Creative",
+    "synonyms": []
+  },
+  "Unreal Engine": {
+    "category": "Design",
+    "parent": "Creative",
+    "synonyms": []
+  },
+
+  "Jira": {
+    "category": "Project Management",
+    "parent": "Management",
+    "synonyms": []
+  },
+  "Trello": {
+    "category": "Project Management",
+    "parent": "Management",
+    "synonyms": []
+  },
+  "Asana": {
+    "category": "Project Management",
+    "parent": "Management",
+    "synonyms": []
+  },
+  "Linear": {
+    "category": "Project Management",
+    "parent": "Management",
+    "synonyms": []
+  },
+  "Monday.com": {
+    "category": "Project Management",
+    "parent": "Management",
+    "synonyms": []
+  },
+  "ClickUp": {
+    "category": "Project Management",
+    "parent": "Management",
+    "synonyms": []
+  },
+  "Basecamp": {
+    "category": "Project Management",
+    "parent": "Management",
+    "synonyms": []
+  },
+  "Slack": {
+    "category": "Project Management",
+    "parent": "Management",
+    "synonyms": []
+  },
+  "Microsoft Teams": {
+    "category": "Project Management",
+    "parent": "Management",
+    "synonyms": ["ms teams"]
+  },
+  "Zoom": {
+    "category": "Project Management",
+    "parent": "Management",
     "synonyms": []
   },
 
@@ -328,6 +1651,87 @@
     "category": "Methodology",
     "parent": "Management",
     "synonyms": []
+  },
+  "Kanban": {
+    "category": "Methodology",
+    "parent": "Management",
+    "synonyms": []
+  },
+  "DevOps": {
+    "category": "Methodology",
+    "parent": "Management",
+    "synonyms": []
+  },
+  "Test-Driven Development": {
+    "category": "Methodology",
+    "parent": "Management",
+    "synonyms": ["tdd"]
+  },
+  "Behavior-Driven Development": {
+    "category": "Methodology",
+    "parent": "Management",
+    "synonyms": ["bdd"]
+  },
+  "Pair Programming": {
+    "category": "Methodology",
+    "parent": "Management",
+    "synonyms": []
+  },
+  "Code Review": {
+    "category": "Methodology",
+    "parent": "Management",
+    "synonyms": []
+  },
+  "SAFe": {
+    "category": "Methodology",
+    "parent": "Management",
+    "synonyms": ["scaled agile"]
+  },
+  "Lean": {
+    "category": "Methodology",
+    "parent": "Management",
+    "synonyms": []
+  },
+  "Six Sigma": {
+    "category": "Methodology",
+    "parent": "Management",
+    "synonyms": []
+  },
+  "ITIL": {
+    "category": "Methodology",
+    "parent": "Management",
+    "synonyms": []
+  },
+
+  "Technical Writing": {
+    "category": "Communication",
+    "parent": "General",
+    "synonyms": []
+  },
+  "Documentation": {
+    "category": "Communication",
+    "parent": "General",
+    "synonyms": []
+  },
+  "Code Documentation": {
+    "category": "Communication",
+    "parent": "General",
+    "synonyms": []
+  },
+  "API Documentation": {
+    "category": "Communication",
+    "parent": "General",
+    "synonyms": []
+  },
+  "Swagger": {
+    "category": "Communication",
+    "parent": "General",
+    "synonyms": ["openapi"]
+  },
+  "Markdown": {
+    "category": "Communication",
+    "parent": "General",
+    "synonyms": ["md"]
   },
 
   "Communication": {
@@ -345,5 +1749,357 @@
     "parent": "General",
     "synonyms": []
   },
-  "Teamwork": { "category": "Soft Skills", "parent": "General", "synonyms": [] }
+  "Teamwork": {
+    "category": "Soft Skills",
+    "parent": "General",
+    "synonyms": []
+  },
+  "Critical Thinking": {
+    "category": "Soft Skills",
+    "parent": "General",
+    "synonyms": []
+  },
+  "Time Management": {
+    "category": "Soft Skills",
+    "parent": "General",
+    "synonyms": []
+  },
+  "Adaptability": {
+    "category": "Soft Skills",
+    "parent": "General",
+    "synonyms": []
+  },
+  "Creativity": {
+    "category": "Soft Skills",
+    "parent": "General",
+    "synonyms": []
+  },
+  "Mentoring": {
+    "category": "Soft Skills",
+    "parent": "General",
+    "synonyms": []
+  },
+  "Public Speaking": {
+    "category": "Soft Skills",
+    "parent": "General",
+    "synonyms": []
+  },
+  "Negotiation": {
+    "category": "Soft Skills",
+    "parent": "General",
+    "synonyms": []
+  },
+  "Conflict Resolution": {
+    "category": "Soft Skills",
+    "parent": "General",
+    "synonyms": []
+  },
+  "Emotional Intelligence": {
+    "category": "Soft Skills",
+    "parent": "General",
+    "synonyms": ["eq"]
+  },
+  "Analytical Thinking": {
+    "category": "Soft Skills",
+    "parent": "General",
+    "synonyms": []
+  },
+  "Attention to Detail": {
+    "category": "Soft Skills",
+    "parent": "General",
+    "synonyms": []
+  },
+
+  "SEO": {
+    "category": "Marketing",
+    "parent": "Business",
+    "synonyms": ["search engine optimization"]
+  },
+  "Google Analytics": {
+    "category": "Marketing",
+    "parent": "Business",
+    "synonyms": ["ga4"]
+  },
+  "Digital Marketing": {
+    "category": "Marketing",
+    "parent": "Business",
+    "synonyms": []
+  },
+  "Content Marketing": {
+    "category": "Marketing",
+    "parent": "Business",
+    "synonyms": []
+  },
+  "Social Media Marketing": {
+    "category": "Marketing",
+    "parent": "Business",
+    "synonyms": ["smm"]
+  },
+  "Email Marketing": {
+    "category": "Marketing",
+    "parent": "Business",
+    "synonyms": []
+  },
+  "Growth Hacking": {
+    "category": "Marketing",
+    "parent": "Business",
+    "synonyms": []
+  },
+  "A/B Testing": {
+    "category": "Marketing",
+    "parent": "Business",
+    "synonyms": []
+  },
+
+  "Financial Modeling": {
+    "category": "Finance",
+    "parent": "Business",
+    "synonyms": []
+  },
+  "Data Analysis": {
+    "category": "Finance",
+    "parent": "Business",
+    "synonyms": []
+  },
+  "Business Intelligence": {
+    "category": "Finance",
+    "parent": "Business",
+    "synonyms": ["bi"]
+  },
+  "ERP": {
+    "category": "Finance",
+    "parent": "Business",
+    "synonyms": ["enterprise resource planning"]
+  },
+  "SAP": {
+    "category": "Finance",
+    "parent": "Business",
+    "synonyms": []
+  },
+  "Salesforce": {
+    "category": "Finance",
+    "parent": "Business",
+    "synonyms": ["crm", "sfdc"]
+  },
+  "HubSpot": {
+    "category": "Finance",
+    "parent": "Business",
+    "synonyms": []
+  },
+  "Stripe": {
+    "category": "Finance",
+    "parent": "Business",
+    "synonyms": []
+  },
+  "QuickBooks": {
+    "category": "Finance",
+    "parent": "Business",
+    "synonyms": []
+  },
+
+  "Hadoop": {
+    "category": "Big Data",
+    "parent": "Data",
+    "synonyms": []
+  },
+  "Apache Hive": {
+    "category": "Big Data",
+    "parent": "Data",
+    "synonyms": ["hive"]
+  },
+  "Apache Flink": {
+    "category": "Big Data",
+    "parent": "Data",
+    "synonyms": ["flink"]
+  },
+  "Snowflake": {
+    "category": "Big Data",
+    "parent": "Data",
+    "synonyms": []
+  },
+  "BigQuery": {
+    "category": "Big Data",
+    "parent": "Data",
+    "synonyms": ["google bigquery"]
+  },
+  "dbt": {
+    "category": "Big Data",
+    "parent": "Data",
+    "synonyms": ["data build tool"]
+  },
+  "ETL": {
+    "category": "Big Data",
+    "parent": "Data",
+    "synonyms": ["extract transform load"]
+  },
+  "Data Warehousing": {
+    "category": "Big Data",
+    "parent": "Data",
+    "synonyms": []
+  },
+  "Databricks": {
+    "category": "Big Data",
+    "parent": "Data",
+    "synonyms": []
+  },
+  "Apache Beam": {
+    "category": "Big Data",
+    "parent": "Data",
+    "synonyms": []
+  },
+  "Redshift": {
+    "category": "Big Data",
+    "parent": "Data",
+    "synonyms": ["aws redshift"]
+  },
+
+  "LaTeX": {
+    "category": "Academic",
+    "parent": "General",
+    "synonyms": []
+  },
+  "Wolfram Mathematica": {
+    "category": "Academic",
+    "parent": "General",
+    "synonyms": ["mathematica"]
+  },
+  "SPSS": {
+    "category": "Academic",
+    "parent": "General",
+    "synonyms": []
+  },
+  "SAS": {
+    "category": "Academic",
+    "parent": "General",
+    "synonyms": []
+  },
+  "Stata": {
+    "category": "Academic",
+    "parent": "General",
+    "synonyms": []
+  },
+
+  "Game Development": {
+    "category": "Game Dev",
+    "parent": "Software Development",
+    "synonyms": []
+  },
+  "Godot": {
+    "category": "Game Dev",
+    "parent": "Software Development",
+    "synonyms": []
+  },
+  "Pygame": {
+    "category": "Game Dev",
+    "parent": "Software Development",
+    "synonyms": []
+  },
+  "OpenGL": {
+    "category": "Game Dev",
+    "parent": "Software Development",
+    "synonyms": []
+  },
+  "Vulkan": {
+    "category": "Game Dev",
+    "parent": "Software Development",
+    "synonyms": []
+  },
+  "DirectX": {
+    "category": "Game Dev",
+    "parent": "Software Development",
+    "synonyms": []
+  },
+
+  "Stripe API": {
+    "category": "APIs & Integrations",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "Twilio": {
+    "category": "APIs & Integrations",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "SendGrid": {
+    "category": "APIs & Integrations",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "Mapbox": {
+    "category": "APIs & Integrations",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "Google Maps API": {
+    "category": "APIs & Integrations",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "Webhooks": {
+    "category": "APIs & Integrations",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "Zapier": {
+    "category": "APIs & Integrations",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "n8n": {
+    "category": "APIs & Integrations",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+
+  "Arduino": {
+    "category": "Hardware & Electronics",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "Raspberry Pi": {
+    "category": "Hardware & Electronics",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "VHDL": {
+    "category": "Hardware & Electronics",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "Verilog": {
+    "category": "Hardware & Electronics",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+
+  "Regex": {
+    "category": "General Programming",
+    "parent": "Technical Skills",
+    "synonyms": ["regular expressions"]
+  },
+  "JSON": {
+    "category": "General Programming",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "XML": {
+    "category": "General Programming",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "YAML": {
+    "category": "General Programming",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "TOML": {
+    "category": "General Programming",
+    "parent": "Technical Skills",
+    "synonyms": []
+  },
+  "Protocol Buffers": {
+    "category": "General Programming",
+    "parent": "Technical Skills",
+    "synonyms": ["protobuf"]
+  }
 }
