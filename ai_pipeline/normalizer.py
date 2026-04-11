@@ -12,13 +12,12 @@ class NormalizationAgent:
             base_dir = os.path.dirname(os.path.dirname(__file__))  
             taxonomy_path = os.path.join(base_dir, "taxonomy", "skills.json")
 
-        print("📂 Using taxonomy path:", taxonomy_path)  # DEBUG
+
 
         self.taxonomy = self.load_taxonomy(taxonomy_path)
-        print("Loaded taxonomy:", self.taxonomy)      # DEBUG
+
 
         self.synonym_map = self.build_synonym_map(self.taxonomy)
-        print("Synonym map:", self.synonym_map)       # DEBUG
         # -------------------------------
         # Load taxonomy
         # -------------------------------
