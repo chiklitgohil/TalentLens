@@ -33,7 +33,7 @@ def compute_match(parsed: dict, job_description: str) -> dict:
         s["canonical"] for s in parsed["candidate"]["normalised_skills"]
         if s["canonical"] != "Unknown"
     ]
-    candidate_text = " ".join(candidate_skills)
+    candidate_text = " ".join(candidate_skills) if candidate_skills else "unknown"
     
     # Embed both
     candidate_embedding = model.encode(candidate_text)
