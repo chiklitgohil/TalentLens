@@ -6,6 +6,7 @@ import io
 import sys
 sys.path.append("../ai_pipeline")
 from pipeline import run_pipeline
+from parser import extract_text_from_pdf, extract_text_from_docx
 
 app = FastAPI()
 
@@ -15,14 +16,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"]
 )
-
-def extract_text_from_pdf(file_bytes: bytes) -> str:
-    doc = fitz.open(stream=file_bytes, filetype="pdf")
-    return " ".join(page.get_text() for page in doc)
-
-def extract_text_from_docx(file_bytes: bytes) -> str:
-    doc = docx.Document(io.BytesIO(file_bytes))
-    return " ".join(para.text for para in doc.paragraphs)
 
 @app.post("/analyze")
 async def analyze(

@@ -98,13 +98,14 @@ class NormalizationAgent:
 
         for skill in skills:
             level = "unknown"
+            safe_skill = re.escape(skill)
 
             # Simple rules (can be improved with LLM later)
-            if re.search(rf"{skill}.*(\d+)\s+years", resume_text, re.IGNORECASE):
+            if re.search(rf"{safe_skill}.*(\d+)\s+years", resume_text, re.IGNORECASE):
                 level = "advanced"
-            elif re.search(rf"familiar with {skill}", resume_text, re.IGNORECASE):
+            elif re.search(rf"familiar with {safe_skill}", resume_text, re.IGNORECASE):
                 level = "beginner"
-            elif re.search(rf"experience with {skill}", resume_text, re.IGNORECASE):
+            elif re.search(rf"experience with {safe_skill}", resume_text, re.IGNORECASE):
                 level = "intermediate"
 
             proficiency[skill] = level

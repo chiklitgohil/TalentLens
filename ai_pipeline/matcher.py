@@ -73,6 +73,3 @@ def compute_match(parsed: dict, job_description: str) -> dict:
         "match_score": match_score,
         "gaps": gaps[:10]  # Limit to top 10 gaps
     }
-
-def match_candidate(parsed: dict, job_description: str) -> dict:
-    return compute_match(parsed, job_description)

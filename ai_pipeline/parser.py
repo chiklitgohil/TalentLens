@@ -15,7 +15,7 @@ load_dotenv()
 client = genai.Client()
 
 def llm_extract_fields(resume_text: str):
-    user_prompt = PARSER_USER_TEMPLATE.format(resume_text=resume_text)
+    user_prompt = PARSER_USER_TEMPLATE.format(RESUME_TEXT=resume_text)
 
     response = client.models.generate_content(
         model="gemini-3.1-flash-lite-preview", 
@@ -25,7 +25,12 @@ def llm_extract_fields(resume_text: str):
             response_mime_type="application/json",
         )
     )
-    return json.loads(response.text)
+    
+    # Strip possible markdown formatting that the LLM might inject
+    raw_text = response.text.strip()
+    if raw_text.startswith("```json"):
+        raw_text = raw_text[7:-3].strip()
+    return json.loads(raw_text)
 
 def extract_text_from_pdf(file_input) -> str:
     text = ""
