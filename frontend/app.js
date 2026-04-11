@@ -88,23 +88,36 @@ async function runAnalysis() {
   animateLoading(steps, 800);
 
   try {
-    // Prepare payload
-    const formData = new FormData();
-    formData.append("resume", files[0]);
-    formData.append("job_description", jd);
+    // Step 1: Parse the Resume
+    const parseFormData = new FormData();
+    parseFormData.append("resume", files[0]);
 
-    // Send to FastAPI backend
-    const res = await fetch("http://localhost:8000/analyze", {
+    const parseRes = await fetch("http://localhost:8000/api/v1/parse", {
       method: "POST",
-      body: formData,
+      body: parseFormData,
     });
 
-    if (!res.ok) {
-      const errData = await res.json();
-      throw new Error(errData.error || "Server error during analysis");
+    if (!parseRes.ok) {
+      const errData = await parseRes.json();
+      throw new Error(errData.error || "Server error during parsing");
     }
 
-    const data = await res.json();
+    const parseData = await parseRes.json();
+    if (parseData.error) throw new Error(parseData.error);
+
+    // Step 2: Match the Job Description
+    const matchRes = await fetch("http://localhost:8000/api/v1/match", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        candidate_id: parseData.candidate_id,
+        job_description: jd,
+      }),
+    });
+
+    if (!matchRes.ok) throw new Error("Server error during matching");
+    const data = await matchRes.json();
+    if (data.error) throw new Error(data.error);
 
     // Log the complete response to the browser's developer console
     console.log("Pipeline Output (Inspect job_requirements here):", data);
