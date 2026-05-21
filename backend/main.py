@@ -12,13 +12,13 @@ import uuid
 ai_pipeline_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "ai_pipeline"))
 sys.path.insert(0, ai_pipeline_dir)
 
-from pipeline import run_pipeline, parse_resume_text, match_pipeline
-from parser import extract_text_from_pdf, extract_text_from_docx, extract_text_from_txt
-from normalizer import NormalizationAgent
+from ai_pipeline.pipeline import run_pipeline, parse_resume_text, match_pipeline
+from ai_pipeline.parser import extract_text_from_pdf, extract_text_from_docx, extract_text_from_txt
+from ai_pipeline.normalizer import NormalizationAgent
 
 app = FastAPI()
 
-# ✅ Keep CORS (good)
+# Keep CORS (good)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -69,7 +69,7 @@ async def parse_resume(resume: UploadFile = File(...), db: Session = Depends(get
     try:
         file_bytes = await resume.read()
 
-        # ✅ safer file type check
+        # safer file type check
         filename = resume.filename.lower()
 
         if filename.endswith(".pdf"):

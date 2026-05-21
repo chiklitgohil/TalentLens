@@ -47,7 +47,7 @@ def extract_text(file_path: str) -> str:
 
 if __name__ == "__main__":
     # Replace this with the path to a real PDF or DOCX file
-    sample_file = "Chiklit-Gohil-Resume.pdf"
+    sample_file = "sample_data/embedded-software-engineer-resume-example_5.pdf"
     
     if os.path.exists(sample_file):
         print(f"Extracting text from {sample_file}...")

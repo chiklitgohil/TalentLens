@@ -1,8 +1,8 @@
 from sentence_transformers import SentenceTransformer
 import chromadb
 import numpy as np
-from parser import llm_extract_jd_skills
-from normalizer import NormalizationAgent
+from ai_pipeline.parser import llm_extract_jd_skills
+from ai_pipeline.normalizer import NormalizationAgent
 
 model = SentenceTransformer("all-MiniLM-L6-v2")
 client = chromadb.Client()

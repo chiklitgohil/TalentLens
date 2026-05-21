@@ -6,3 +6,12 @@
 __pycache__/
 *.pyc
 venv/
+
+# Database
+*.db
+
+# macOS
+.DS_Store
+
+# Testing
+.pytest_cache/
